@@ -1,0 +1,58 @@
+{% load tags %}
+{% load static %}
+
+<!-- Control Sidebar -->
+
+<aside  id="control-sidebar-menu" class="control-sidebar control-sidebar-dark">
+  <!-- Create the tabs -->
+  <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+    <li class="active" ><a class="control-sidebar-tab settings-tab" href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+    <li id="control-sidebar-tasks-tab-li">
+      <a class="control-sidebar-tab tasks-tab" href="#control-sidebar-tasks-tab" data-toggle="tab">
+        <i class="fa fa-home"></i>
+      </a>
+    </li>
+  </ul>
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div class="tab-pane active" id="control-sidebar-settings-tab">
+      <h3 class="control-sidebar-heading">Actividad reciente</h3>
+      <ul class="control-sidebar-menu">
+          {# render_watchdogs #}
+      </ul>
+    </div>
+  </div>
+</aside>
+
+<div  class="control-sidebar-bg"></div>
+
+<script type="text/javascript">
+  var show_tasks = false
+
+  function calcular_porcentage_group(group_id){
+    i = 0
+    sum = 0
+    $(".task-group-" + group_id).each(function (index, element) {
+      // element == this
+      sum += Number($(element).html().replace('%', ''))
+      i = i + 1
+    })
+    return String((sum/ i).toFixed(2))  + '%'
+  }
+
+  $("body").on('DOMSubtreeModified', ".task-porcentage-span", function() {
+    group_id = $(this).attr("group-id");
+    porc = calcular_porcentage_group(group_id)
+    if (porc== '100%') {
+      $("#task-group-span-" + group_id).removeClass('label-info');
+      $("#task-group-span-" + group_id).addClass('label-success');
+    }else{
+      if ($("#task-group-span-" + group_id).hasClass('label-success')) {
+        $("#task-group-span-" + group_id).removeClass('label-success');
+        $("#task-group-span-" + group_id).addClass('label-info');
+      }
+    }
+    $("#task-group-span-" + group_id).html(porc);
+  });
+
+</script>

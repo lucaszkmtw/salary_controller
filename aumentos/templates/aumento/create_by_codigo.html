@@ -1,0 +1,35 @@
+<!-- template: aumento_por_codigo.html -->
+
+
+<div class="tab-pane active" id="tab-codigo">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-1">
+                <h5>Código</h5>
+            </div>
+            <div class="col-md-11">
+                <select class="select2 col-md-12" id="cargo-codigo" style="border-radius:0px;" onchange="changeUrl();">
+          <optgroup label="Cargos">
+            <option selected disabled></option>
+            {% for cargo in cargos %}
+              <option value="{{cargo.codigo}}"  id="{{cargo.codigo}}">
+                {{cargo.codigo}}&nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;{{cargo.cargo}}
+              </option>
+            {% endfor %}
+          </optgroup>
+        </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    function changeUrl() {
+        var selectBox = document.getElementById("cargo-codigo");
+        var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+        console.log(selectedValue, movimiento_id);
+        document.getElementById('crear_cargo_codigo_url').href = "/aumentos/cargo_codigo/" + movimiento_id + "/" + selectedValue;
+
+    }
+</script>

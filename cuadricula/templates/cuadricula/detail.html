@@ -1,0 +1,65 @@
+{% extends 'marco.html' %}
+{% load widget_tweaks %}
+
+{% block title %}
+<title>Cuadriculas</title>
+{% endblock %}
+
+{% block css_mas %}
+{% endblock %}
+
+{% block marco %}
+<!-- template: detalle_proyecto.html -->
+<section class="content-header">
+    <h1>
+        Cuadricula
+        <small>Detail</small>
+    </h1>
+</section>
+
+<section class="content">
+    {% include "blocks/messages.html" %}
+    <div class="box box-success">
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="creator" value="{{user.id}}">
+            <div class="box-header with-border">
+                <h3 class="box-title">Ver Cuadricula</h3>
+                <div class="pull-right box-tools">
+                    <a href="{% url 'cuadricula-update' cuadricula.id %}" class="btn btn-sm btn-info">Modificar</a>
+                    <a href="{% url 'cuadricula-delete' cuadricula.id %}" class="btn btn-sm btn-danger">Eliminar</a>
+                    <a href="{% url 'cuadricula-list' %}" class="btn btn-sm btn-primary">Ver todos</a>
+                </div>
+            </div>
+            <div class="box-body">
+                <dl class="row">
+                    <dt class="col-sm-3">Codigo</dt>
+                    <dd class="col-sm-9">{{ cuadricula.codigo}}</dd>
+
+                    <dt class="col-sm-3">Periodo Desde</dt>
+                    <dd class="col-sm-9">{{ cuadricula.periodo_dd}}</dd>
+
+                    <dt class="col-sm-3">Periodo Hasta</dt>
+                    <dd class="col-sm-9">{{ cuadricula.periodo_ht}}</dd>
+
+                    <dt class="col-sm-3">nombre</dt>
+                    <dd class="col-sm-9">{{ cuadricula.nombre}}</dd>
+
+                    <dt class="col-sm-3">objeservaciones</dt>
+                    <dd class="col-sm-9">{{ cuadricula.observaciones}}</dd>
+
+                    <dt class="col-sm-3">proyecto</dt>
+                    <dd class="col-sm-9">{{ cuadricula.proyecto}}</dd>
+
+                    <dt class="col-sm-3">reaparticion</dt>
+                    <dd class="col-sm-9">{{ cuadricula.reparticion}}</dd>
+                </dl>
+            </div>
+        </form>
+    </div>
+</section>
+
+{% endblock %}
+
+{% block js_mas %}
+{% endblock %}

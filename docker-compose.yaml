@@ -1,0 +1,46 @@
+version: '3.5'
+
+services:
+  postgres-siliq:
+    image: postgres:13.2-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgresql-data-siliq:/var/lib/postgresql/data
+
+  redis-siliq:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+
+  app-siliq:
+    depends_on:
+      - postgres-siliq
+      - redis-siliq
+    volumes:
+      - .:/usr/src/app
+      - ./media:/usr/src/app/media
+      - ./logs:/usr/src/app/logs
+
+  celery_worker-siliq:
+    volumes:
+      - .:/usr/src/app
+      - ./media:/usr/src/app/media
+    depends_on:
+      - postgres-siliq
+      - redis-siliq
+
+  celery_beat-siliq:
+    volumes:
+      - .:/usr/src/app
+      - ./media:/usr/src/app/media
+    depends_on:
+      - postgres-siliq
+      - redis-siliq
+
+volumes:
+  postgresql-data-siliq:

@@ -1,0 +1,9 @@
+-r default.txt
+
+ipython==7.31.1
+
+django-debug-toolbar==3.2.1
+#django-debug-toolbar-template-profiler==2.0.2
+django-debug-toolbar-template-timings==0.9
+
+prompt-toolkit==3.0.18

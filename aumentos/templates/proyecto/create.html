@@ -1,0 +1,39 @@
+{% extends 'marco.html' %}
+
+{% block title %}
+<title>Proyecto</title>
+{% endblock %}
+
+{% block css_mas %}
+{% endblock %}
+
+{% block marco %}
+<!-- template: detalle_proyecto.html -->
+
+<section class="content-header">
+    <h1>
+        Proyecto
+        <small>Create</small>
+    </h1>
+</section>
+
+<section class="content">
+    {% include "blocks/messages.html" %}
+    {% include "blocks/errors.html" %}
+    <div class="box box-success">
+        <div class="box-header with-border">
+            <h3 class="box-title">Crear Proyecto</h3>
+            <div class="pull-right box-tools">
+                <a href="{% url 'proyecto-list' %}" class="btn btn-sm btn-primary">Ver todas</a>
+            </div>
+        </div>
+        <div class="box-body">
+            {% include "proyecto/create_inner.html" %}
+        </div>
+        <a href="{% url 'proyecto-list' %}" class="btn btn-danger">Cancelar</a>
+    </div>
+</section>
+{% endblock %}
+
+{% block js_mas %}
+{% endblock %}

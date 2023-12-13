@@ -1,0 +1,219 @@
+<!-- template: aumento/create_by_cargo_tabla_periodos.html -->
+
+<script type="text/javascript">
+    $(".select2").select2();
+</script>
+
+<style>
+    .select2-selection__choice {
+        color: white !important;
+        background-color: #00b1c7 !important;
+    }
+    
+    .select2-selection__choice span {
+        color: white !important;
+    }
+</style>
+
+<div class="row">
+    <form id="form_agregar_aumento_mult">
+        <div class="col-md-2">
+            <div class="form-group">
+                <label>Tipo de aumento</label>
+                <select class="select2" data-placeholder="Selecciona tipo de aumento" style="width: 100%" id="tipo_aumento_select">
+            <option>Porcentaje</option>
+            <option>Suma fija</option>
+          </select>
+            </div>
+        </div>
+
+        <div class="col-md-7">
+            <div class="form-group">
+                <label>Campo de aumento</label>
+                <select class="select2" multiple="multiple" data-placeholder="Selecciona tipo de aumento" style="width: 100%" id="campos_aumentos_select_mult" required>
+            <option>basico</option>
+            <option>suple1</option>
+            <option>suple2</option>
+            <option>sumafij1</option>
+            <option>sumafij2</option>
+            <option>sumafij3</option>
+          </select>
+            </div>
+        </div>
+
+        <div class="col-md-2">
+            <div class="form-group">
+                <label>Cantidad</label>
+                <div class="input-group">
+                    <span class="input-group-addon" id="tipo_aumento_icon">%</span>
+                    <input type="number" class="form-control" id="cantidad_aumento" required />
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-1">
+            <div class="form-group" style="padding-top: 30px">
+                <input type="submit" class="btn btn-sm btn-success" value="Agregar" />
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <ul class="list-group list-group-flush" id="list_aumentos"></ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table" id="tabla_aumentos_periodos">
+            <thead>
+                <tr>
+                    <th scope="col">periodo\atributo</th>
+                    <th scope="col">basico</th>
+                    <th scope="col">suple1</th>
+                    <th scope="col">suple2</th>
+                    <th scope="col">sumafij1</th>
+                    <th scope="col">sumafij2</th>
+                    <th scope="col">sumafij3</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for periodo in periodos %}
+                <tr>
+                    <th scope="row">
+                        {{ periodo.periodo | date:"Y-m" }}
+                    </th>
+                    <td class="periodo_basico">
+                        {{ periodo.basico }}
+                    </td>
+                    <td class="periodo_suplemento1">
+                        {{ periodo.suplemento1 }}
+                    </td>
+                    <td class="periodo_suplemento2">
+                        {{ periodo.suplemento2 }}
+                    </td>
+                    <td class="periodo_sumafija1">
+                        {{ periodo.sumafija1 }}
+                    </td>
+                    <td class="periodo_sumafija2">
+                        {{ periodo.sumafija2 }}
+                    </td>
+                    <td class="periodo_sumafija3">
+                        {{ periodo.sumafija3 }}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="row">
+    <button class="btn btn-sm btn-success float-right" id="aplicar_aumentos">
+      Aplicar
+    </button>
+</div>
+
+<script type="text/javascript">
+    var json_aumentos = {},
+        cargo_id = "{{cargo.id}}"
+
+    function clear_campos_aumento_multiples() {
+        $("#campos_aumentos_select_mult :selected").each(function() {
+            $(this).prop("selected", false);
+        });
+        $(".select2-selection__choice").each(function() {
+            $(this).remove();
+        });
+        $("#cantidad_aumento").val("");
+    }
+
+    $("#tipo_aumento_select").change(function() {
+        if ($(this).find(":selected").text() == "Porcentaje") {
+            $("#tipo_aumento_icon").text("%");
+        } else {
+            $("#tipo_aumento_icon").text("+");
+        }
+    });
+
+    $("#form_agregar_aumento_mult").submit(function(event) {
+        event.preventDefault();
+
+        let tipo_aumento = $("#tipo_aumento_select").find(":selected").text();
+        var campos_aumentos = [];
+        let simbolo_aumento = $("#tipo_aumento_icon").text();
+        let cantidad_aumento = $("#cantidad_aumento").val();
+
+        $("#campos_aumentos_select_mult :selected").each(function() {
+            campos_aumentos.push($(this).text());
+        });
+
+        campos_aumentos.forEach(
+            function(campo_aumento) {
+                $("#tabla_aumentos_periodos > tbody > tr > td").each(function() {
+                    $(this).each(function(index, element) {
+                        if ($(element).hasClass(`periodo_${campo_aumento}`)) {
+                            let val = parseFloat($(element).text())
+                            if (tipo_aumento == 'Porcentaje') {
+                                $(element).text(parseFloat(val + val * cantidad_aumento / 100).toFixed(2))
+                            } else {
+                                $(element).text(parseFloat(val + cantidad_aumento).toFixed(2))
+                            }
+                        }
+                    });
+                });
+
+                if (json_aumentos[campo_aumento]) {
+                    if (Array.isArray(json_aumentos[campo_aumento])) {
+                        array_json_aumentos_campo = Array.from(json_aumentos[campo_aumento])
+                        array_json_aumentos_campo.push(JSON.parse(`{"${tipo_aumento}":${cantidad_aumento}}`))
+                        json_aumentos[campo_aumento] = array_json_aumentos_campo
+                    } else {
+                        json_aumentos[campo_aumento] = JSON.parse(`[${JSON.stringify(json_aumentos[campo_aumento])},{"${tipo_aumento}":${cantidad_aumento}}]`)
+                    }
+                } else {
+                    json_aumentos[campo_aumento] = JSON.parse(`{"${tipo_aumento}":${cantidad_aumento}}`)
+                }
+            }
+        )
+
+        $("#list_aumentos").append(
+            `<li class="list-group-item">
+            • Aumento de tipo ${tipo_aumento} de ${simbolo_aumento} ${cantidad_aumento} a los campos
+            ${campos_aumentos.join(", ")}.
+          </li>`
+        );
+
+        clear_campos_aumento_multiples();
+    });
+
+    $("#aplicar_aumentos").click(function(e) {
+        e.preventDefault();
+        //console.log(json_aumentos)
+        $.ajax({
+            type: "GET",
+            url: "/aumentos/guardar_aumentocargo/",
+            data: {
+                json_aumentos: JSON.stringify(json_aumentos),
+                movimiento_id: movimiento_id,
+                cargo_id: cargo_id
+            },
+            success: function(context) {
+                if (context.ALERT == 1) {
+                    notificar(
+                        "Hubo un error con el objeto " + context.OBJECT,
+                        " fa-info",
+                        "danger"
+                    );
+                }
+                //Si se guardo correctamente lo imprime en la tabla
+                load_aumentos();
+                ocultarAumentos();
+                $("#spin-cargos-aumentos").hide();
+                $('#siliq_modal_windows').modal('hide')
+            },
+        });
+    });
+</script>

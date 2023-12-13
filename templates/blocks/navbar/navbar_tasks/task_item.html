@@ -1,0 +1,30 @@
+{% load static %}
+{% load tags %}
+
+<!-- Task item -->
+<li class="item-obj-class" item-obj-class="{{ obj_class|replace:".,|" }}-{{ task_id }}">
+    <a href="#">
+        <h3>
+            {{ description }}
+            <small class="pull-right">{{ percentage }}%</small>
+        </h3>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="progress xs">
+                    <div class="progress-bar progress-bar-{% if percentage == '100' %}green{% else %}blue{% endif %}" style="width: {{ percentage }}%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <span class="sr-only">{{ percentage }}% Complete</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"><span></span></div>
+            <div class="col-md-1">
+                <button class="btn btn-danger btn-flat btn-xs delete-object" obj-id="{{ task_id }}" obj-class="{{ obj_class|replace:".,|" }}">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+
+
+    </a>
+</li>
+<!-- end task item -->

@@ -1,0 +1,26 @@
+{% for cuadricula in cuadriculas %}
+          <tr>
+
+            <th> {{cuadricula.codigo}} </th>
+            <th> {{cuadricula.nombre}}</th>
+            <th>{{cuadricula.reparticion}} </th>
+            <th> {{cuadricula.periodo_dd}} </th>
+            <th> {{cuadricula.periodo_ht}} </th>
+            <th> {{cuadricula.creator}}</th>
+
+            <th>
+              <a href="{% url 'cuadricula-update' cuadricula.id %}" class="btn btn-xs btn-warning pull-right mx-5">
+                <span class="glyphicon glyphicon-pencil"></span> Modificar
+              </a>
+
+              <a href="{% url 'cuadricula-delete' cuadricula.id %}" class="btn btn-xs btn-danger pull-right mx-5">
+                <span class="glyphicon glyphicon-trash"></span> Eliminar
+              </a>
+              <a href="{% url 'cuadricula-detail' cuadricula.id %}" class="btn btn-xs btn-info pull-right mx-5">
+                <i class="fa fa-fw fa-eye"></i> Ver
+              </a>
+
+            </th>
+          </tr>
+          
+          {% endfor %}

@@ -1,0 +1,66 @@
+{% extends 'marco.html' %}
+{% load widget_tweaks %}
+
+{% block title %}
+  <title>Cuadriculas</title>
+{% endblock %}
+{% load static %}
+{% block css_mas %}
+  <style>
+    .mx-5 {
+      margin-left: 1px !important;
+      margin-right: 1px !important;
+    }
+  </style>
+  <link rel="stylesheet" href="{% static 'css/dataTables.bootstrap.min.css' %}">
+{% endblock %}
+
+{% block marco %}
+<!-- template: cuadricula/list.html -->
+<section class="content-header">
+  <h1>
+    Cuadricula
+    <small>List</small>
+  </h1>
+</section>
+
+<section class="content">
+  <div class="box box-success">
+    <div class="box-header with-border">
+      <h3 class="box-title">Listado de Cuadriculas</h3>
+      <div class="pull-right box-tools">
+        <a href="{% url 'cuadricula-create' %}" class="btn btn-sm btn-primary">Crear</a>
+      </div>
+    </div>
+    <div class="box-body no-padding">
+      <table class="table table-responsive  table-hover tabla-cuadricula" id="tabla_cuadricula">
+        
+          <thead>
+            <tr>
+              <th>Codigo</th>
+              <th>Nombre</th>
+              <th>reparticion</th>
+              <th>periodo desde</th>
+              <th>periodo hasta</th>
+              <th>Autor</th>
+              <th></th>
+            </tr>
+          </thead>
+        <tbody>
+          
+         
+        </tbody>
+      </table>
+    </div>
+
+
+  </div>
+</section>
+<!-- end template: cuadricula/list.html -->
+{% endblock %}
+
+{% block js_mas %}
+<script src="{% static 'js/dataTables.bootstrap.min.js' %}"></script>
+<script src="{% static 'js/datatables.min.js' %}"></script>
+<script src="{% static 'js/cuadricula.js' %}"> </script>
+{% endblock %}

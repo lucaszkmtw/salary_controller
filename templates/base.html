@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  {% block title %}{% endblock %}
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <script src="{% static 'js/jquery-3.3.1.js' %}"></script>
+  <link rel="stylesheet" href="{% static '/bower_components/bootstrap/dist/css/bootstrap.min.css' %}">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static 'bower_components/font-awesome/css/font-awesome.min.css' %}">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="{% static '/css/siliq.css' %}" >
+  <link rel="stylesheet" href="{% static 'bower_components/Ionicons/css/ionicons.min.css' %}">
+  <link rel="stylesheet" href="{% static '/dist/css/AdminLTE.min.css' %}">
+  <link rel="stylesheet" href="{% static '/dist/css/skins/skin-blue.min.css' %}">
+  <link rel="stylesheet" href="{% static '/css/loading.css' %}">
+  <link rel="stylesheet" href="{% static '/plugins/multiselect/css/multi-select.css' %}">
+  <link rel="stylesheet" href="{% static '/plugins/iCheck/flat/blue.css' %}">
+  <link rel="stylesheet" href="{% static '/plugins/Inputmask-5.x/css/inputmask.css' %}">
+  <link rel="stylesheet" href="{% static '/css/tooltip.css' %}">
+  <link rel="stylesheet" href="{% static '/css/confirmDeleteModal.css' %}">
+  <link rel="stylesheet" href="{% static '/bower_components/select2/dist/css/select2.min.css' %}">
+  <link rel="stylesheet" href="{% static '/plugins/bootstrap-slider/slider.css' %}">
+
+  <link href="{% static '/img/favicon.ico' %}" type="image/x-icon" rel="icon" />
+  <link href="{% static '/img/favicon.ico' %}" type="image/x-icon" rel="shortcut icon" />
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="stylesheet" href="https://cdn.datatables.net/rowreorder/1.2.5/css/rowReorder.bootstrap4.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+  {% block css %}{% endblock %}
+</head>
+
+<body {% block body-class %}{% endblock %}>
+  {% include "blocks/modal.html" %}
+</body>
+{% block content %}{% endblock %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="{% static '/bower_components/jquery-slimscroll/jquery.slimscroll.min.js' %}"></script>
+<script src="{% static '/plugins/multiselect/js/jquery.multi-select.js' %}"></script>
+<script src="{% static '/bower_components/jquery/dist/jquery.min.js' %}"></script>
+<script src="{% static '/plugins/Inputmask-5.x/dist/jquery.inputmask.min.js' %}"></script>
+
+<script src="{% static 'bower_components/datatables.net/js/jquery.dataTables.min.js' %}"></script>
+<script src="{% static 'bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js' %}"></script>
+<script src="{% static '/plugins/bootstrap-slider/bootstrap-slider.js' %}"></script>
+<script src="{% static '/bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+
+<script src="{% static 'bower_components/select2/dist/js/select2.full.min.js' %}"></script>
+<script src="{% static '/bower_components/fastclick/lib/fastclick.js' %}"></script>
+<script src="{% static '/plugins/iCheck/icheck.min.js' %}"></script>
+<script src="{% static '/dist/js/adminlte.min.js' %}"></script>
+<script src="{% static '/js/tooltip.js' %}"></script>
+<!--  Notifications   -->
+<script src="{% static '/js/bootstrap-notify.min.js' %}"></script>
+<script src="{% static 'js/global_functions/functions.js' %}"></script>
+{% block js %}{% endblock %}
+<!-- Guardo el usuario en sesion y el token -->
+{% csrf_token %}
+<script type="text/javascript">
+  var csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+  var user_id = "{{ user.id }}"
+  var host = "{{ request.META.HTTP_HOST }}"
+</script>
+</html>

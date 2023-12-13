@@ -1,0 +1,43 @@
+{
+    "cSpell.words": [
+        "agrup",
+        "agrupacion",
+        "antiguedad",
+        "Attachea",
+        "aume",
+        "creacion",
+        "desloguea",
+        "edicion",
+        "fsplit",
+        "Hashea",
+        "hisc",
+        "Hiscmun",
+        "HLSV",
+        "modulos",
+        "objs",
+        "obvservaciones",
+        "pepasword",
+        "postgres",
+        "reparticion",
+        "siliq",
+        "Sumafij",
+        "zfill"
+    ],
+    "cSpell.language": "en,es",
+    "jupyter.jupyterServerType": "remote",
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.pythonPath": "venv/bin/python",
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "siliq",
+            "database": "postgres",
+            "username": "postgres",
+            "password": "postgres"
+        }
+    ]
+}

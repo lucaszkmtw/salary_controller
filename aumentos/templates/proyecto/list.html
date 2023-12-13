@@ -1,0 +1,138 @@
+{% extends 'marco.html' %}
+{% load static %}
+{% load tags %}
+
+{% block title %}
+<title>Proyecto</title>
+{% endblock %}
+
+{% block css_mas %}
+{% endblock %}
+
+{% block marco %}
+<!-- template: abm_proyectos.html -->
+
+<section class="content-header">
+  <h1>
+    Proyecto
+    <small>Create</small>
+  </h1>
+</section>
+
+<section class="content">
+  {% include "blocks/messages.html" %}
+  {% include "blocks/errors.html" %}
+
+  <div class="box box-danger">
+    <div class="box-header">
+      <h3 class="box-title">Listado de Proyectos</h3>
+      {% if perms.aumentos.add_proyecto%}
+        <a class="btn btn-default pull-right" id="modal-create-movimiento" action="{% url 'proyecto-create' %}">
+          <i class="fa fa-fw fa-plus"></i> Nuevo Proyecto
+        </a>
+      {% endif %}
+    </div>
+    <div class="box-body ">
+      <div class="row">
+        <div class="col-md-12">
+          <table id="tabla_abm" class="table table-bordered table-striped">
+            <thead>
+              <th>Nombre</th>
+              <th>Fecha Hiscar</th>
+              <th>Fecha Limite</th>
+              <th>Cant. Mov. </th>
+              <th>Estado</th>
+              <th> </th>
+            </thead>
+            <tbody>
+              {% for proyecto in proyectos %}
+                <tr id="row-{{proyecto.id}}" name="{{proyecto.descripcion}}">
+                  <td>
+                    {{proyecto.nombre}}
+                  </td>
+                  <td>{{ proyecto.fecha_hiscar|date:'Y-m'}} </td>
+                  <td>
+                    {{proyecto.fecha_limite}}
+                    <small
+                      class="pull-right text-danger tiempo-restante pull-right"
+                      value="{{proyecto.fecha_limite|date:'Y-m-d'}}"
+                      is_active="{{proyecto.is_active}}"
+                      is_close="{{proyecto.is_close}}">
+                    </small>
+                  </td>
+                  <td>
+                    <small></small>
+                  </td>
+                  <td>
+                    <small></small>
+                  </td>
+                  <td>
+                    {% if perms.aumentos.change_proyecto %}
+                      <a
+                        type="button"
+                        style="margin: 3px;"
+                        class="btn btn-default btn-sm pull-right"
+                        href="{% url 'proyecto-update' proyecto.id %}"
+                      >
+                      <i class="fa fa-edit fa-align-justify"></i>
+                      Editar
+                      </a>
+                    {% endif %}
+                    {% if perms.aumentos.view_proyecto %}
+                      <a
+                        type="button"
+                        style="margin: 3px;"
+                        class="btn btn-default btn-sm pull-right"
+                        href="{% url 'proyecto-detail' proyecto.id %}"
+                      >
+                        <i class="fa fa-fw fa-align-justify"></i>
+                        Ver Detalle
+                      </a>
+                    {% endif %}
+                    {% if not proyecto.is_close %}
+                        <a
+                          type="button"
+                          style="margin: 3px;"
+                          proy_id="{{ proyecto.id}}"
+                          class="btn btn-default btn-sm finalizar-proyecto pull-right"
+                        >
+                          <i class="fa fa-fw fa-check-square-o"></i>
+                          Finalizar
+                        </a>
+                        {% if perms.aumentos.delete_proyecto %}
+                          <a
+                            href="{% url 'proyecto-delete' proyecto.id %}"
+                            style="margin: 3px;"
+                            class="btn btn-default btn-sm pull-right"
+                          >
+                            <i class="fa fa-fw fa-remove"></i>
+                            Eliminar
+                          </a>
+                        {% endif %}
+                    {% endif %}
+                  </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% include "blocks/modal.html" %}
+{% include "blocks/spinner.html" %}
+{% endblock %}
+{% block js_mas %}
+<!-- functions.js -->
+<script src="{% static '/js/global_functions/functions.js' %}"></script>
+<!-- Siliq.js -->
+<script src="{% static '/js/siliq.js' %}"></script>
+<!-- Proyectos.js -->
+<script src="{% static '/js/proyectos.js' %}"></script>
+<!-- Countdown.js -->
+<script src="{% static '/plugins/jquery.countdown-2.2.0/jquery.countdown.min.js' %}"></script>
+
+{% csrf_token %}
+
+{% endblock %}

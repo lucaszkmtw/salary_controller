@@ -1,0 +1,88 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Siliq on docker",
+            "type": "python",
+            "request": "attach",
+            "port": 5678,
+            "host": "localhost",
+            "pathMappings": [
+                {
+                    "localRoot": "${workspaceFolder}",
+                    "remoteRoot": "/usr/src/app"
+                }
+            ]
+        },
+        {
+            "name": "Python File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Django",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "runserver",
+                "0.0.0.0:8000",
+                "--noreload"
+            ],
+            "env": {
+                "DJANGO_SETTINGS_MODULE": "project.settings.local"
+            },
+            "django": true,
+            "justMyCode": false
+        },
+        {
+            "name": "Beat",
+            "type": "python",
+            "cwd": "${workspaceFolder}",
+            "request": "launch",
+            "module": "celery",
+            "console": "integratedTerminal",
+            "env": {
+                "DJANGO_SETTINGS_MODULE": "project.settings.local"
+            },
+            "django": true,
+            "justMyCode": false,
+            "args": [
+                "-A",
+                "project",
+                "beat",
+                "-l",
+                "info",
+                "--scheduler",
+                "django_celery_beat.schedulers:DatabaseScheduler",
+                "--pidfile=beat.pid"
+            ]
+        },
+        {
+            "name": "Celery",
+            "type": "python",
+            "cwd": "${workspaceFolder}",
+            "request": "launch",
+            "module": "celery",
+            "console": "integratedTerminal",
+            "args": [
+                "-A",
+                "project",
+                "worker",
+                "-l",
+                "info",
+                "--pidfile=celery.pid"
+            ],
+            "env": {
+                "DJANGO_SETTINGS_MODULE": "project.settings.local"
+            },
+            "django": true,
+            "justMyCode": false
+        }
+    ]
+}

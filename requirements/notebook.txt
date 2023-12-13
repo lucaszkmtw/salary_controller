@@ -1,0 +1,4 @@
+-r debug.txt
+
+jupyter==1.0.0
+sqlparse==0.4.2

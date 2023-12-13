@@ -1,0 +1,207 @@
+<!-- template: formulario_aumento_modulo.html -->
+<style>
+  .col-md-4,
+  .col-md-3,
+  .col-md-2,
+  .col-md-1\.5,
+  .col-md-1 {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+</style>
+
+<div class="box box-danger">
+  <div class="box-body ">
+    <button type="button" class="close" aria-hidden="true" id="ocultar-aumento" style="padding-bottom: 10px;">×</button>
+
+    <div class="row">
+      <div class="col-md-12">
+        <form action="/aumentos/guardar_aumento_modulo/" id="formulario-aumento-modulo" method="POST">
+          {% csrf_token %}
+          <input type="hidden" name="cargo_id" id="input_cargo">
+          <input type="hidden" name="regla" id="input_regla">
+          <input type="hidden" name="agrupamiento" id="input_agrupamiento">
+          <input type="hidden" name="movimiento" id="input_movimiento">
+          <input type="hidden" name="has_modulo" id="has_modulo" value="{{ reparticion.has_modulo }}">
+          <input type="hidden" name="reparticion_codigo" id="reparticion_codigo" value="{{ reparticion.codigo }}">
+          <div class="col-md-2">
+            <select class="form-control" name="campo-aumento" id="campo-aumento" required>
+              <option value="" disabled selected>Campo</option>
+              {% for id, nombre in tipos_aumento.items %}
+              <option value="{{nombre}}" obj-id="{{id}}">{{nombre}}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="col-md-2">
+            <select class="form-control" aria-hidden="true" name="valor-aumento" id="valor-aumento"
+              style="display: none;" required>
+              <option value="" disabled selected>Valor</option>
+              {% for id, nombre in tipos_calculo.items %}
+                  <option value="{{nombre}}" obj-id="{{id}}">{{nombre}}</option>
+              {% endfor %}
+            </select>
+          </div>
+
+          <div class="col-md-4" id="valor-modulos-div" style="display: none;">
+            <strong>
+              <input type="text" value="Tipo:" class="form-control" name="valor-modulos" id="valor-modulos"
+                valor-modulo="" nombre-modulo="JQ" required>
+            </strong>
+          </div>
+
+
+          <div class="col-md-1">
+            <input type="number" class="form-control" name="cantidad" id="cantidad" required style="display: none;">
+          </div>
+
+          <div class="col-md-1">
+            <input type="text" class="form-control" id="icono_tipo_calculo" readonly style="display: none;">
+          </div>
+
+          <div class="col-md-2" id="resultado-aumento-div">
+            <input type="number" class="form-control" name="resultado-aumento" id="resultado-aumento" disabled required
+              style="display: none;">
+          </div>
+
+          <div class="pull-right">
+            <input type="submit" class="btn btn-default" value="Guardar" style="display: none;">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function modo_aumento_seleccionado() {
+    var valor;
+    $(".modo-aumento-tab").each(function (index, element) {
+      if ($(element).parent().hasClass('active')) {
+        valor = $(element).text()
+      }
+    })
+    return valor.trim()
+  }
+
+  function calcular_aumento_modulo(cantidad, tipo_aumento) {
+    var campo_aumento;
+    // FIXME
+    if ($("#campo-aumento").val() == null){
+      campo_aumento = $("#campo-aumento").val()
+    }else {
+      campo_aumento = $("#campo-aumento").val().toLowerCase()
+    }
+    cant_modulos = parseFloat(valoresCargo[ campo_aumento ]) / parseFloat($("#valor-modulos").attr('valor-modulo'))
+    if (tipo_aumento == 'Porcentual') {
+      return Math.round((cant_modulos * cantidad / 100) + cant_modulos)
+    } else {
+      return Math.round(cantidad / parseFloat($("#valor-modulos").attr('valor-modulo')))
+    }
+  }
+
+  function clear_aumento_modulo_imputs() {
+    $("#cantidad").val('')
+    $("#cantidad").hide()
+    $("#resultado-aumento").val('')
+    $("#resultado-aumento").hide()
+    $("#valor-aumento").children("option:selected").removeAttr("selected")
+    $("#icono_tipo_calculo").hide()
+    $('input[type="submit"]').hide()
+    $("#valor-modulos-div").hide();
+  }
+
+  $(document).ready(function () {
+
+    $("#formulario-aumento-modulo").submit(function (e) {
+      e.preventDefault()
+      data = $(this).serialize()
+
+      $.ajax({
+        type: $(this).attr('method'),
+        url: $(this).attr('action'),
+        data: data,
+        success: function (response) {
+          if (response.ALERT == 0) {
+            ocultarAumentos()
+            clear_aumento_modulo_imputs()
+            load_aumentos()
+          } else {
+            notificar("Hubo un error con el objeto " + context.OBJECT, ' fa-info', 'danger')
+          }
+        }
+      })
+    })
+
+    icono = {
+      1: '%',
+      2: 'SF'
+    }
+
+
+
+    $("#valor-aumento").click(function (e) {
+      e.preventDefault()
+      clear_aumento_modulo_imputs()
+      if (modo_aumento_seleccionado() == "Codigo") {
+        $("#valor-modulos").show();
+        $("#valor-modulos-div").show();
+      }
+
+      if ($(this).children("option:selected").attr('obj-id') == 5) {
+        $("#icono_tipo_calculo").hide()
+        $("#cantidad").parent().removeClass('col-md-1')
+        $("#cantidad").parent().addClass('col-md-4')
+        $('input[type="submit"]').show()
+      } else {
+        $("#cantidad").parent().removeClass('col-md-4')
+        $("#cantidad").parent().addClass('col-md-1')
+        $("#icono_tipo_calculo").show()
+        $("#icono_tipo_calculo").val(icono[ $(this).children("option:selected").attr('obj-id') ])
+      }
+      $("#cantidad").show()
+    })
+
+
+    $("#campo-aumento").change(function (e) {
+      e.preventDefault();
+      $("#valor-aumento").show()
+    });
+
+    $("#campo-aumento").click(function (e) {
+      clear_aumento_modulo_imputs()
+      $("#valor-modulos").hide();
+      e.preventDefault()
+      valor_modulo = $("#valor-modulos").attr('valor-modulo')
+      nombre_modulo = $("#valor-modulos").attr('nombre-modulo')
+      // FIXME (Este if es para evitar que tire error por lowercase to a null.)
+      if ($("#campo-aumento").val() == null) {
+        sueldo = valoresCargo[$("#campo-aumento").val()]
+      }else{
+        sueldo = valoresCargo[ $("#campo-aumento").val().toLowerCase() ]
+      }
+      if (sueldo == null) {
+        sueldo = 0
+      }
+      cant_modulos = Math.round(parseFloat(sueldo) / parseFloat(valor_modulo))
+
+      $("#valor-modulos").val('Tipo ' + 'JQ' + ': $' + valor_modulo + '*' + cant_modulos + '= $' + sueldo)
+    })
+
+    $("#cantidad").keyup(function (e) {
+      e.preventDefault()
+      if ($("#valor-aumento").children("option:selected").attr('obj-id') == 5) { } else {
+        if (modo_aumento_seleccionado() == "Codigo") {
+          $("#resultado-aumento").show()
+        }
+        $('input[type="submit"]').show()
+        $("#resultado-aumento").val(
+          calcular_aumento_modulo(
+            $(this).val(),
+            $("#valor-aumento").children("option:selected").val()
+          )
+        )
+      }
+    })
+  })
+
+</script>

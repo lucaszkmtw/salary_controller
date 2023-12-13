@@ -1,0 +1,12 @@
+{% if user %}
+<div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown"
+          aria-expanded="false">
+          <span class="fa fa-user"></span>
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="#"> {{user}} - {{modified}} </a></li>
+        </ul>
+      </div>
+{% endif %}

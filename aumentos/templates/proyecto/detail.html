@@ -1,0 +1,186 @@
+{% extends 'marco.html' %}
+{% load static %}
+{% block title %}<title>Proyecto - {{ proyecto.nombre }}</title>{% endblock %}
+{% block marco %}
+{% load tags %}
+<!-- template: detalle_proyecto.html -->
+
+<!-- Datatable.js -->
+<link rel="stylesheet" href="{% static '/bower_components/datatables.net-bs/css/buttons.dataTables.min.css' %}">
+<link rel="stylesheet" href="{% static '/bower_components/datatables.net-bs/css/rowReorder.dataTables.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/sweetalert2.min.css' %}">
+<!-- Chart.js -->
+<link rel="stylesheet" href="{% static '/bower_components/chart2.0/Chart.min.css' %}">
+<div class="content container-fluid" style="margin:0;">
+  <div>
+    <!-- Header -->
+    <div class="box box-danger">
+      <div class="box-header">
+        <a class="btn btn-default pull-left"
+          href="{% url 'proyecto-list' %}">
+          <i class="fa fa-fw  fa-mail-reply"></i> Ir a Proyectos
+        </a>
+        {% if not proyecto.is_close and perms.aumentos.add_movimiento%}
+          <a class="btn btn-default pull-right" id="modal-create-movimiento" action="{% url 'movimiento-create' %}?proyecto_id={{proyecto.id}}">
+            <i class="fa fa-fw fa-plus"></i> Nuevo Movimiento
+          </a>
+        {% endif %}
+      </div>
+      <div class="box-header">
+        <h3> Proyecto: {{proyecto.nombre}} {% if not proyecto.is_close %}
+          <small class="text-danger pull-right "><strong>Fecha límite: </strong>{{proyecto.fecha_limite}} &nbsp;
+            <i class="text-danger tiempo-restante" 
+              value="{{proyecto.fecha_limite|date:'Y-m-d'}}"></i></small>{% else %} - Finalizado {% endif %}
+        </h3>
+      </div>
+      <!-- End Header-->
+      <!-- Body -->
+
+      <div class="box-body">
+        <div class="row">
+          <div class="col-md-12">
+            {% if perms.aumentos.view_movimiento %}
+            <table id="tabla_abm" proy_id="{{proyecto.id}}" proy_hasta="{{proyecto.periodo_ht}}" is_close="{{proyecto.is_close}}"
+              class="table table-bordered table-striped display table-hover">
+              <thead>
+                <th class="no-sort">Orden.</th>
+                <th class="no-sort">Reparticion</th>
+                <th class="no-sort">
+                  Descripcion
+                  <small class="text-info pull-right" style="font-size: 11px;">Tipo</small>
+                </th>
+                <th class="no-sort">Desde</th>
+                <th class="no-sort">Hasta</th>
+
+                <th class="no-sort"></th>
+              </thead>
+              <tbody>
+                {% for movimiento in movimientos %}
+                  {% if movimiento.is_active %}
+                  <tr id="{{movimiento.id}}" name="{{movimiento.descripcion}}" repart_id="{{movimiento.reparticion.id}}"
+                    rep_name="{{movimiento.reparticion.nombre}}" periodo="{{movimiento.periodo_dd}}">
+                    <td class="tabla-abm-orden">
+                      <i class="fa fa-fw fa-arrows pull-right"></i> {{movimiento.orden}}
+                    </td>
+                    <td>
+                      <p class="upper-c">
+                        {% if movimiento.reparticion.codigo|slice:"4:" == "-1" %}{{movimiento.reparticion.codigo|slice:":4"}}
+                        {% else %}{{movimiento.reparticion.codigo}}{% endif %} - {{movimiento.reparticion.nombre}}
+                        &nbsp;<small class="pull-right meses-totales"></small>
+
+                      </p>
+                    </td>
+                    <td>
+                      <p class="upper-c ">
+                        {{movimiento.descripcion}}
+                        <small class="text-info pull-right" style="font-size: 11px;">
+                          {{ tipos_de_movimientos|index:movimiento.tipo_movimiento }}
+                          {% if movimiento.reparticion.has_modulo %}
+                          <strong class="text-success pull-right"> &nbsp; M</strong>
+                          {% endif %}
+                        </small>
+                      </p>
+                    </td>
+                    <td>
+                      {{movimiento.periodo_dd | date:"Y-m" }}
+                    </td>
+                    <td>
+                      {% if movimiento.periodo_ht %}
+                      {{movimiento.periodo_ht  | date:"Y-m"}}
+                      {% endif %}
+                    </td>
+
+                    <td>
+                      {% if perms.aumentos.view_movimiento %}
+                        <a
+                          type="button"
+                          style="margin: 3px;"
+                          class="btn btn-default btn-sm pull-right"
+                          href="{% url 'movimiento-detail' movimiento.id %}"
+                        >
+                          <i class="fa fa-fw fa-align-justify"></i> Detalle
+                        </a>
+                      {% endif %}
+                      {% if not movimiento.is_close %}
+                        {% if perms.aumentos.delete_movimiento %}
+                          <button type="button" style="margin: 3px;"
+                            class="btn btn-default btn-sm eliminar-movimiento">
+                            <i class="fa fa-fw fa-trash"></i> Eliminar
+                          </button>
+                        {% endif %}
+                        {% if perms.aumentos.change_movimiento %}
+                          <button type="button" fmid="{{movimiento.id}}" style="margin: 3px;"
+                            class="btn btn-default btn-sm finalizar-movimiento pull-right">
+                            <i class="fa fa-fw fa-file-text-o"></i> Finalizar
+                          </button>
+                        {% endif %}
+                      {% else %}
+                        {% if not proyecto.is_close and perms.aumentos.change_movimiento %}
+                          <button type="button" style="margin: 3px;" class="btn btn-default btn-sm habilitar-edicion">
+                            <i class="fa fa-fw fa-pencil"></i> Habilitar edición
+                          </button>
+                        {% endif %}
+                        <span class="pull-right"><i class="fa fa-fw fa-lock"></i> Finalizado</span>
+                      {% endif %}
+                    </td>
+                  </tr>
+                  {% endif %}
+                {% endfor %}
+              </tbody>
+            </table>
+            {% else %}
+              <div class="alert alert-danger">
+                No tiene permisos para ver los movimientos.
+                <br>
+                Ante cualquier duda contactar con los administradores.
+              </div>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      <!-- End Body -->
+
+
+      <!-- Loading Spinner-->
+      <div class="overlay" id="spin-movimientos" style="display:none;">
+        <i class="fa fa-refresh fa-spin"></i>
+      </div>
+      <!-- end Loading Spinner -->
+    </div>
+  </div>
+
+</div>
+
+
+{% include "blocks/spinner.html" %}
+{% include "blocks/modal.html" %}
+{% include "blocks/confirmDeleteModal.html" %}
+{% endblock %}
+{% block js_mas %}
+<!-- functions.js -->
+<script src="{% static '/js/global_functions/functions.js' %}"></script>
+<!-- Chart.js -->
+<script src="{% static 'bower_components/chart2.0/Chart.min.js' %}"></script>
+<!-- Datefunctions.js -->
+<script src="{% static '/js/datefunctions/datefunctions.js' %}"></script>
+<!-- Datatable Row Reorder js y Buttons-->
+<script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="//cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
+<script src="{% static '/bower_components/datatables.net-bs/js/dataTables.rowReorder.min.js' %}"></script>
+<script src="{% static '/bower_components/datatables.net-bs/js/dataTables.buttons.min.js' %}"></script>
+<script src="{% static '/bower_components/datatables.net-bs/js/buttons.print.js' %}"></script>
+
+<!-- Proyectos.js -->
+<script src="{% static '/js/proyectos.js' %}"></script>
+<!-- Countdown.js -->
+<script src="{% static '/plugins/jquery.countdown-2.2.0/jquery.countdown.min.js' %}"></script>
+<script src="{% static 'js/sweetalert2.all.min.js' %}"></script>
+
+{% csrf_token %}
+<!-- Guarda el usuario en sesion y el token-->
+<script type="text/javascript">
+  var csrftoken = jQuery("[name=csrfmiddlewaretoken]").val();
+  var user_id = "{{ user.id }}"
+</script>
+
+{% endblock %}

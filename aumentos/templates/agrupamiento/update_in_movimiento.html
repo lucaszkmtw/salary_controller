@@ -1,0 +1,42 @@
+<!-- template: modificar_agrupamiento.html -->
+{% block marco %}
+{% load static %}
+<input class="form-control" type="text" placeholder="Nombre de la agrupacion" id="agrupacion-nombre"
+  value="{{ agrupamiento.nombre }}">
+<select id='pre-selected-options' multiple='multiple'>
+  {% for cargo in cargos %}
+  {% if cargo.id in cargos_agrupamiento %}
+  <option id_bd="{{ cargo.id }}" value="{{ cargo.codigo }}" selected>
+    {{ cargo.codigo}} - {{ cargo.cargo}}</option>
+  {% else %}
+  {% if cargo.id in cargos_agrupamientos %}
+  {%<!-- 
+  <option id_bd="{{ cargo.id }}" value="{{ cargo.codigo }}" style="text-decoration:line-through !important;">
+  --> %}
+  {{ cargo.codigo}} - {{ cargo.cargo}}</option>
+  {% else %}
+  <option id_bd="{{ cargo.id }}" value="{{ cargo.codigo }}">{{ cargo.codigo}} - {{ cargo.cargo}}</option>
+  {% endif %}
+  {% endif %}
+  {% endfor %}
+</select>
+<br>
+<button type="button" class="btn btn-primary btn-flat" id="modificar-agrupamiento-save" agrup-id="{{agrupamiento.id}}"
+  muni-id="{{municipio.id}}">
+  <i class="fa fa-fw fa-save"></i>
+  Guardar
+</button>
+<button type="button" class="btn btn-danger btn-flat" id="cancelar-agrupamiento">
+  <i class="fa fa-fw fa-close"></i>
+  Cancelar
+</button>
+{% block js_mas %}
+<!-- Multiselect.js -->
+<script src="{% static '/plugins/multiselect/js/jquery.multi-select.js' %}"></script>
+<!-- Quicksearch.js -->
+<script src="{% static '/plugins/multiselect/js/jquery.quicksearch.js' %}"></script>
+<!-- agrupamientos.js -->
+<script src="{% static '/js/agrupamientos.js' %}"></script>
+{% endblock %}
+
+{% endblock %}

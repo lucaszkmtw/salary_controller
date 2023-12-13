@@ -1,0 +1,79 @@
+<!-- template: aumento/create.html -->
+{% load tags %} {% load static %}
+
+<link rel="stylesheet" href="{% static '/bower_components/select2/dist/css/select2.min.css' %}">
+
+<div class="row">
+    <div class="col-md-12">
+
+        <div class="box box-solid">
+            <div class="nav-tabs-custom">
+
+                <ul class="nav nav-tabs">
+                    {% if movimiento.tipo_movimiento == 1 %}
+                    <li class="active">
+                        <a class="tabs modo-aumento-tab" href="#tab-codigo" data-toggle="tab" aria-expanded="true">
+                Codigo
+              </a>
+                    </li>
+                    <li>
+                        <a class="tabs modo-aumento-tab" href="#tab-regla" data-toggle="tab" aria-expanded="false">
+                Reglas
+              </a>
+                    </li>
+                    <li>
+                        <a class="tabs modo-aumento-tab" href="#tab-agrupamiento" data-toggle="tab" aria-expanded="false">
+                Agrupamientos
+              </a>
+                    </li>
+                    {% else %} {% if movimiento.tipo_movimiento == 3 %}
+                    <li class="active">
+                        <a href="#tab-cargo-new" class="tabs modo-aumento-tab" data-toggle="tab" aria-expanded="false">
+                  Cargo Nuevo
+                </a>
+                    </li>
+                    {% else %} {% if movimiento.tipo_movimiento == 2 %}
+                    <li class="active">
+                        <a href="#tab-cargo-baja" class="tabs modo-aumento-tab" data-toggle="tab" aria-expanded="false">
+                    Baja Cargo
+                  </a>
+                    </li>
+                    {% endif %} {% endif %} {% endif %}
+                </ul>
+
+                <div class="tab-content">
+                    {% if movimiento.tipo_movimiento == 1 %} {% include "aumento/create_by_regla.html" %} {% include "aumento/create_by_codigo.html" %} {% include "aumento/create_by_agrupamiento.html" %} {% else %} {% if movimiento.tipo_movimiento == 3 %} {% include "aumento/create_alta_de_cargo.html"
+                    %} {% else %} {% if movimiento.tipo_movimiento == 2 %} {% include "aumento/create_baja_de_cargo.html" %} {% endif %} {% endif %} {% endif %}
+                    <!-- <button type="button" class="btn btn-default btn-flat" id="button-tipo-aumento">
+          
+          </button> -->
+                    <a href="#" id="crear_cargo_codigo_url">
+                        <button class="btn btn-default btn-flat" id="aumento-tipo">Select Codigo  <i class="fa fa-fw fa-caret-right"></i></button>
+                    </a>
+
+
+
+                </div>
+
+                <div class="overlay" id="spin-select-aumento" style="display:none;">
+                    <i class="fa fa-refresh fa-spin"></i>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static '/bower_components/select2/dist/js/select2.full.min.js' %}"></script>
+    <script type="text/javascript">
+        function clear_cargos_new_inputs() {
+            $("#cargo_new_form :input").each(function(index, element) {
+                if ($(element).attr('type') != "hidden" && $(element).attr('type') != "submit") {
+                    $(element).val("")
+                }
+            });
+        }
+    </script>
+
+
+
+    <!-- end template: selector_aumento.html -->

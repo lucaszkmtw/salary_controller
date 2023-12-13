@@ -1,0 +1,71 @@
+<!-- template: update_in_movimiento.html -->
+
+<div class="box box-success box-solid" id="box-aumento-crear">
+    <div class="box-header with-border">
+        <h3 class="box-title" repart-id="{{ reparticion.id }}" id="repart-aume" />
+        <a class="btn btn-success btn-xs" href="{% url 'proyecto-detail' proyecto.id %}">
+            <i class="fa fa-fw  fa-mail-reply"></i> Atras
+        </a>
+        <h3 class="box-title" proy_id="{{proyecto.id}}" repart-id="{{ reparticion.id }}" id="repart-aume">
+            <strong>&nbsp;&nbsp;Reparticion {{ reparticion.codigo }} - {{ reparticion.nombre }}: </strong>
+            <span id="aume-desc-colapsed" />
+        </h3>
+        <h3 class="box-title" id="aume-desc-rango-colapsed"></h3>
+        {% if not movimiento.is_close %}
+        <div class="box-tools pull-right">
+            <button type="button" class="btn btn-success btn-sm" id="tool-aumento">Editar <i class="fa fa-edit"></i>
+            </button>
+        </div>
+        {% endif %}
+    </div>
+    <!-- /.box-header -->
+    <div class="box-body" hidden>
+        <form action="/aumentos/editar_movimiento/" id="formulario_editar_movimiento" method="POST">
+            {% csrf_token %}
+            <input
+                type="hidden"
+                name="movimiento_id"
+                value="{% if movimiento %}{{ movimiento.id }}{% endif %}"
+            />
+            <div class="item-required col-xs-8">
+                <label for="aume-desc">Nombre: </label>
+                <input
+                    type="text"
+                    name="movimiento_nombre"
+                    class="form-control"
+                    placeholder="Nombre del movimiento .."
+                    value="{% if movimiento %}{{ movimiento.nombre }}{% endif %}"
+                    required
+                >
+            </div>
+            <div class="item-required col-xs-4">
+                <div class="col-xs-6">
+                        <label for="periodos-aumento-dd">Periodo desde:</label>
+                        <input
+                            type="month"
+                            name="movimiento_periodo_dd"
+                            class="form-control"
+                            value="{% if movimiento %}{{ movimiento.periodo_dd|date:'Y-m' }}{% endif %}"
+                            required
+                        >
+                </div>
+                <div class="col-xs-6">
+                    <label for="periodos-aumento-ht">Periodo hasta</label>
+                    <input
+                        type="month"
+                        class="form-control"
+                        name="movimiento_periodo_ht"
+                        value="{% if movimiento %}{{ movimiento.periodo_ht|date:'Y-m' }}{% endif %}"
+                    >
+                </div>
+
+            </div>
+
+            <div class="col-xs-12" style="padding-top: 20px;">
+                <input type="submit" class="btn btn-success btn-flat pull-right" value="Guardar"></input>
+                <button type="button" class="btn btn-danger btn-flat pull-right"
+                    onclick="ocultarAumentoBox();">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>

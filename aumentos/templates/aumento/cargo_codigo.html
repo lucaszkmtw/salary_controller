@@ -1,0 +1,276 @@
+{% extends 'marco.html' %} {% load static %} {% load tags %} {% block title %}
+<title>Movimiento</title>
+{% endblock %} {% block descipcion %}
+<h1>Movimiento {{ municipio }}</h1>
+{% endblock %} {% block marco %}
+<!-- template: movimiento/detail.html -->
+
+
+
+
+
+<div class="box box-success box-solid" id="box-aumento-crear">
+    <div class="box-header with-border">
+        <h3 class="box-title">
+
+            <h3 class="box-title">
+                <strong>&nbsp;&nbsp;MOVIMIENTO {{ movimiento.nombre }} -  CARGO :  {{ cargo_id.codigo}}: </strong>
+                <span> 
+        </h3>
+        <h3 class="box-title" id="aume-desc-rango-colapsed"></h3>
+
+        <div class="box-tools pull-right">
+            <a class="btn btn-success btn-xs" href="/aumentos/movimiento/{{movimiento.id}}">
+                <i class="fa fa-fw  fa-mail-reply"></i> Atras
+            </a>
+          
+        </div>
+
+    </div>
+
+</div>
+    <br><br>
+    <!-- template: formulario_aumento.html -->
+    <!-- template: aumento/create_by_cargo_tabla_periodos.html -->
+
+    <style>
+        .select2-selection__choice {
+            color: white !important;
+            background-color: #00b1c7 !important;
+        }
+        
+        .select2-selection__choice span {
+            color: white !important;
+        }
+        
+        #aumento_creado tr {
+            background-color: #ddeaeb;
+        }
+        
+        #aumento_creado tr:hover {
+            background-color: #bff8ff;
+        }
+    </style>
+    <div class="row">
+        <form id="form_agregar_aumento_mult" method="POST">
+            {% csrf_token %}
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label>Tipo de aumento</label>
+                    <select class="select2" data-placeholder="Selecciona tipo de aumento" style="width: 100%" id="campos_tipo">
+            <option value="1">Porcentaje</option>
+            <option value="2">Suma fija</option>
+          </select>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+                <div class="form-group">
+                    <label>Campo de aumento</label>
+                    <select class="select2"  data-placeholder="Selecciona tipo de aumento" style="width: 100%" id="campos_aumentos_select_mult" required>
+            <option value="1" >basico</option>
+            <option value="2">suple1</option>
+            <option value="3">suple2</option>
+            <option value="4">sumafij1</option>
+            <option value="5">sumafij2</option>
+            <option value="6">sumafij3</option>
+          </select>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label>Cantidad</label>
+                    <div class="input-group">
+                        <span class="input-group-addon" id="tipo_aumento_icon">%</span>
+                <input type="number" class="form-control" id="cantidad_aumento" required />
+    </div>
+</div>
+</div>
+
+<div class="col-md-1">
+    <div class="form-group" style="padding-top: 30px">
+        <button class="btn btn-success" id="save">APLICAR</button>
+    </div>
+</div>
+</form>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <ul class="list-group list-group-flush" id="list_aumentos"></ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table" id="tabla_aumentos_periodos">
+            <thead>
+                <tr>
+                    <th scope="col">periodo\atributo</th>
+                    <th scope="col">basico</th>
+                    <th scope="col">suple1</th>
+                    <th scope="col">suple2</th>
+                    <th scope="col">sumafij1</th>
+                    <th scope="col">sumafij2</th>
+                    <th scope="col">sumafij3</th>
+                    <th scope="col"></th>
+                    
+                </tr>
+            </thead>
+            <tbody id="aumento_creado" style="width:100%;margin-top:30px" bordercolor="lightgray">
+
+
+
+
+                </tr>
+
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- template: tabla_movimiento.html -->
+<div class="row" id="tabla_aumentos_cargos">
+    <div class="col-md-12">
+        <div class="box box-default">
+            <div style="padding: 10px;">
+                <table id="tabla_aumento_cargo" class="table table-bordered table-hover">
+                    <thead>
+
+                        <tr>
+                            <th> Periodo</th>
+                            <th> Básico </th>
+                            <th> Suple1 </th>
+                            <th> Suple2 </th>
+                            <th> SumaFij1 </th>
+                            <th> SumaFij2 </th>
+                            <th> SumaFij3 </th>
+                            <th> antiguedad </th>
+                            <th></th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="aumentos">
+
+
+                    </tbody>
+                </table>
+            </div>
+
+
+
+
+            <!-- Loading-->
+            <div class="overlay" id="spin-cargos-aumentos" style="display:none;">
+                <i class="fa fa-refresh fa-spin"></i>
+            </div>
+            <!-- end loading -->
+        </div>
+    </div>
+</div>
+
+
+{% include "blocks/spinner.html" %} {% include "blocks/confirmDeleteModal.html" %} {% include "blocks/modal.html" %} {% endblock %} {% block js_mas %}
+<script>
+    var aumento_id = "{{aumento.id}}";
+    var cargo = "{{cargo_id.id}}";
+    var nombre = "{{cargo_id.codigo}}"
+    var movimiento_id = "{{movimiento.id}}"
+    var selected = '';
+    var option = '';
+    var tipo_aumento = '';
+</script>
+<!-- DataTable Row Reorder js -->
+<script src="{% static '/bower_components/datatables.net-bs/js/dataTables.rowReorder.min.js' %}"></script>
+
+<script src="{% static 'js/aumentos/tabla_por_codigo.js' %}"></script>
+<script src="{% static 'js/aumentos/tabla_hiscar.js' %}"></script>
+
+<!-- Aumentos.js -->
+<!-- Siliq.js -->
+<script src="{% static 'js/sweetalert2.all.min.js' %}"></script>
+
+<script>
+    var periodo = "{{periodo}}";
+    var basico = "{{hiscar_ultima.basico}}"
+    var suplemento1 = "{{hiscar_ultima.suplemento1}}"
+    var suplemento2 = "{{hiscar_ultima.suplemento2}}"
+    var sumafija1 = "{{hiscar_ultima.sumafija1}}"
+    var sumafija2 = "{{hiscar_ultima.sumafija2}}"
+    var sumafija3 = "{{hiscar_ultima.sumafija3}}"
+
+    // function tabla_aumento_codigo() {
+
+    //     if ($.fn.DataTable.isDataTable('#tabla_aumento_cargo')) {
+    //         $('#tabla_aumento_cargo').DataTable().destroy();
+    //     }
+    //     $('#tabla_aumento_cargo tbody').html("");
+    //     var i = 0;
+    //     let fila = "";
+    //     fila += " {% for hiscar in hiscar_cargo %}";
+    //     i = i + 1;
+    //     fila += '<tr id="hiscar_' + i + '">';
+    //     fila += '<td id="periodo_' + i + '" ><strong> {{hiscar.periodo}} </strong></td>';
+    //     fila += '<td id="basico_' + i + '"><strong>{{hiscar.basico}} </strong></td>';
+    //     fila += '<td id="suplemento1_' + i + '"><strong>{{hiscar.suplemento1}}</strong> </td>';
+    //     fila += '<td id="suplemento2_' + i + '"><strong>{{hiscar.suplemento2}}</strong> </td>';
+    //     fila += '<td id="sumafija1_' + i + '"><strong>{{hiscar.sumafija1}}</strong> </td>';
+    //     fila += '<td id="sumafija2_' + i + '"><strong>{{hiscar.sumafija2}}</strong> </td>';
+    //     fila += '<td id="sumafija3_' + i + '"><strong>{{hiscar.sumafija3}}</strong> </td>';
+    //     fila += '<td id="antiguedad_' + i + '"><strong> -null-</strong></td>';
+    //     fila += '<td><strong> </td>';
+    //     fila += '</tr>';
+    //     fila += "{% endfor %}";
+    //     $('#tabla_aumento_cargo tbody').append(fila);
+
+
+
+    //     $('#tabla_aumento_cargo').DataTable({
+    //         language: {
+    //             "decimal": "",
+    //             "emptyTable": "No hay información",
+    //             "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
+    //             "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+    //             "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+    //             "infoPostFix": "",
+    //             "thousands": ",",
+    //             "lengthMenu": "Mostrar _MENU_ Entradas",
+    //             "loadingRecords": "Cargando...",
+    //             "processing": "Procesando...",
+    //             "search": "Buscar:",
+    //             "zeroRecords": "Sin resultados encontrados",
+    //             "paginate": {
+    //                 "first": "Primero",
+    //                 "last": "Ultimo",
+    //                 "next": "Siguiente",
+    //                 "previous": "Anterior"
+    //             },
+    //         },
+    //     });
+    // }
+
+    // tabla_aumento_codigo();
+
+
+
+    $(".select2").select2({
+        placeholder: "Select cargo",
+        allowClear: true
+    });
+</script>
+
+
+
+
+
+
+
+{% endblock %}

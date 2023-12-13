@@ -1,0 +1,63 @@
+{% extends 'marco.html' %} {% load static %} {% load tags %} {% block title %}
+<title>Movimiento</title>
+{% endblock %} {% block descipcion %}
+<h1>Movimiento {{ municipio }}</h1>
+{% endblock %} {% block marco %}
+<!-- template: movimiento/detail.html -->
+<h1> CARGO S252 </h1>
+<div class="row" id="tabla_aumentos_cargo">
+    <div class="col-md-12">
+        <div class="box box-default">
+            <div style="padding: 10px;">
+                <table id="tabla_aumento_cargo" class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+
+                            <th>Cargo</th>
+                            <th> Básico </th>
+                            <th> Suple1 </th>
+                            <th> Suple2 </th>
+                            <th> SumaFij1 </th>
+                            <th> SumaFij2 </th>
+                            <th> SumaFij3 </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+
+            <!-- Loading-->
+            <div class="overlay" id="spin-cargos-aumentos" style="display:none;">
+                <i class="fa fa-refresh fa-spin"></i>
+            </div>
+            <!-- end loading -->
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+
+<script>
+</script>
+<!-- DataTable Row Reorder js -->
+
+
+
+
+<script src="{% static 'js/aumentos/tabla_aumento_cargo.js' %}"></script>
+
+
+
+
+{% endblock %}

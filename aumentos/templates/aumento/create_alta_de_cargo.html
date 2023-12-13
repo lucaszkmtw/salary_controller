@@ -1,0 +1,36 @@
+<div class="tab-pane active" id="tab-cargo-new">
+    <div class="container">
+      <div class="row" style="padding-bottom: 20px;">
+        <select class="select2 col-md-12" id="select-cargo" style="border-radius:0px;">
+          <optgroup label="Cargos">
+            <option selected disabled>Cargo</option>
+            {% for cargo in cargos %}
+              <option value="{{cargo.codigo}}">
+                  {{cargo.codigo}}&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{cargo.cargo}}
+              </option>
+            {% endfor %}
+          </optgroup>
+        </select>
+      </div>
+      <div class="row" style="padding-top: 20px;">
+        {% for id, nombre in tipos_aumento.items %}
+          <div class="col-md-2 form-group">
+            <label for="{{ nombre }}">{{ nombre }}</label>
+            <div class="input-group">
+              <span class="input-group-addon">$</span>
+              <input type="number" name="{{ nombre }}" class="form-control" required>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div>
+        <button
+          id="button-tipo-aumento"
+          class="btn btn-default btn-flat"
+          style="padding-top: 20px;"
+        >
+          <i class="fa fa-fw fa-caret-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>

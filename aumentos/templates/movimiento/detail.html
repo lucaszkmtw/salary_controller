@@ -1,0 +1,63 @@
+{% extends 'marco.html' %} {% load static %} {% load tags %} {% block title %}
+<title>Movimiento</title>
+{% endblock %} {% block descipcion %}
+<h1>Movimiento {{ municipio }}</h1>
+{% endblock %} {% block marco %}
+<!-- template: movimiento/detail.html -->
+<section class="content container-fluid">
+    <div class="row">
+        {% if perms.aumentos.change_movimiento %}
+        <div id="crear_aumento" class="col-md-12">
+            {% include "movimiento/update_in_movimiento.html" %}
+        </div>
+        {% endif %} {% if not movimiento.is_close and perms.aumentos.create_aumento%}
+        <div id="elegir_cargos" class="col-md-5">
+            {% include "aumento/create.html" %}
+        </div>
+        {% endif %}
+
+
+        <div id="aumentos" class="col-md-7 formularios_aumento" hidden>
+            {% if reparticion.has_modulo %} {% include "aumento/create_by_modulo.html" %} {% else %} {% include "aumento/create_valores.html" %} {% endif %}
+        </div>
+
+        <div class="col-md-12">
+            {% if perms.aumentos.change_movimiento and perms.aumentos.view_aumento %} {% include "aumento/list_table.html" %} {% else %}
+            <div class="callout callout-danger">
+                <h4>
+                    No tiene permisos para ver los aumentos.
+                </h4>
+                Ante cualquier duda contactar con los administradores.
+            </div>
+            {% endif %}
+        </div>
+
+    </div>
+</section>
+
+
+<div class="modal fade" id="eliminacion" role="dialog">
+
+</div>
+
+{% include "blocks/spinner.html" %} {% include "blocks/confirmDeleteModal.html" %} {% include "blocks/modal.html" %} {% endblock %} {% block js_mas %}
+<script>
+    var aumento_id = "{{aumento.id}}"
+    var movimiento_id = "{{ movimiento.id }}",
+        reparticion_codigo = "{{ reparticion.codigo }}",
+        reparticion_id = "{{ reparticion.id }}";
+</script>
+<!-- DataTable Row Reorder js -->
+<script src="{% static '/bower_components/datatables.net-bs/js/dataTables.rowReorder.min.js' %}"></script>
+<!-- Aumentos.js -->
+<script src="{% static '/js/aumentos.js' %}"></script>
+<script src="{% static '/js/aumentos/eliminar_aumentos.js' %}"></script>
+<script src="{% static '/js/aumentos/tabla_aumentos.js' %}"></script>
+
+<!-- Siliq.js -->
+<script src="{% static '/js/siliq.js' %}"></script>
+<script src="{% static 'js/sweetalert2.all.min.js' %}"></script>
+
+
+
+{% endblock %}

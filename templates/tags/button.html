@@ -1,0 +1,56 @@
+<button type="button" class="btn btn-default btn-flat" id="button-{{ tipo }}">
+    {{ text }}
+    <i class="fa fa-fw fa-caret-right"></i>
+</button>
+
+<script type="text/javascript">
+    $("#button-{{ tipo }}").click(function (e) {
+        e.preventDefault();
+        $("#formulario-aumento").trigger("reset");
+
+        {% if tipo == 'cargo' %}
+
+            var cargo_id = $("#cargo-codigo").val();
+            if (cargo_id) {
+                $("#spin-select-aumento").show();
+                mostrar_campos_formulario_aum();
+                valor_cargo_actual(cargo_id);
+            } else {
+                alert("Seleccione un cargo.");
+            }
+        {% endif %}
+
+        {% if tipo == 'regla' %}
+            if ($("#regla_aumento").val().toUpperCase()) {
+
+                if ($("#has_modulo").attr('value') == "True") {
+                }
+
+
+                ocultar_campos_formulario_aum();
+                mostrarAumentos();
+
+            } else {
+                alert("Ingrese una regla de aumento.");
+            }
+        {% endif %}
+
+        {% if tipo == 'agrupamiento' %}
+            if ($("#cargo-agrupamiento").val()) {
+                ocultar_campos_formulario_aum();
+                mostrarAumentos();
+            } else {
+                alert("Seleccione un agrupamiento.");
+            }
+        {% endif %}
+
+        if ($("#has_modulo").attr('value') == "True") {
+            clear_aumento_modulo_imputs()
+            $("#valor-modulos").val("Tipo:")
+            $("#input_cargo").val($("#cargo-codigo").val())
+            $("#input_agrupamiento").val($("#cargo-agrupamiento").val())
+            $("#input_movimiento").val($("#mov-id").attr("aumento-id"))
+            $("#input_regla").val($("#regla_aumento").val())
+        }
+    });
+</script>

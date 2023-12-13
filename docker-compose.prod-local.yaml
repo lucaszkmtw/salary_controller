@@ -1,0 +1,79 @@
+version: '3.5'
+
+volumes:
+  staticfiles-siliq:
+  postgresql-data-siliq:
+
+networks:
+  default:
+    external: true
+    name: ips-gba-gov-ar
+
+services:
+  postgres-siliq:
+    env_file: prod.env
+
+  app-siliq:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: app
+      args:
+        requirements_file: prod.txt
+    env_file: prod.env
+    command: sh -c "
+      python manage.py migrate &&
+      python manage.py collectstatic --no-input &&
+      python manage.py loaddata fixtures/users.json &&
+      gunicorn project.wsgi -c gunicorn-conf.py"
+    depends_on:
+      - nginx-siliq
+    volumes:
+      - .:/usr/src/app
+      - staticfiles-siliq:/usr/src/app/staticfiles
+    environment:
+      - DJANGO_SETTINGS_MODULE=project.settings.production
+
+  celery_worker-siliq:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: app
+      args:
+        requirements_file: celery.txt
+    env_file: prod.env
+    environment:
+      - DJANGO_SETTINGS_MODULE=project.settings.production
+    command: sh -c "
+      celery
+      -A project
+      worker
+      -l info
+      --pidfile=celery.pid"
+
+  celery_beat-siliq:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: app
+      args:
+        requirements_file: celery.txt
+    env_file: prod.env
+    environment:
+      - DJANGO_SETTINGS_MODULE=project.settings.production
+    command: sh -c "celery
+      -A project beat
+      -l info
+      --scheduler django_celery_beat.schedulers:DatabaseScheduler
+      --pidfile=beat.pid"
+
+  nginx-siliq:
+    image: nginx:alpine
+    command: nginx -g "daemon off;"
+    ports:
+      - "80:80"
+    volumes:
+      - ./default.conf:/etc/nginx/nginx.conf:ro
+      - ./media:/www/media
+      - ./logs:/var/log/nginx
+      - staticfiles-siliq:/www/static

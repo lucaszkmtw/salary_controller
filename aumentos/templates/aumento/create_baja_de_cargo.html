@@ -1,0 +1,20 @@
+<div class="tab-pane active" id="tab-cargo-baja">
+  <div class="container">
+    <div class="row" style="padding-bottom: 20px;">
+      <select class="select2 col-md-12" id="select-cargo-baja" style="border-radius:0px;">
+        <optgroup label="Cargos">
+          <option selected disabled>Cargo</option>
+          {% for cargo in cargos %}
+            <option value="{{cargo.codigo}}">
+                {{cargo.codigo}}&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                {{cargo.cargo}}
+            </option>
+          {% endfor %}
+        </optgroup>
+      </select>
+    </div>
+    <div class="row" style="padding-bottom: 20px;">
+      <button class="btn btn-flat btn-success pull-right btn-baja-cargo disabled">Dar de baja cargo</button>
+    </div>
+  </div>
+</div>

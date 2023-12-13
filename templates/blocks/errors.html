@@ -1,0 +1,26 @@
+{% if form.errors %}
+<!-- blocks/errors.html -->
+    <div class="callout callout-alert alert-error">
+        <h4>Por favor corrige los siguientes errores:</h4>
+        <ul>
+            {% for field in form %}
+                {% if field.errors %}
+                    <li>
+                        <strong>{{ field.name }}:</strong>
+                        {% for error in field.errors %}
+                        <ul>
+                            <a href="#id_{{ field.name }}" class="error">
+                                {{ error|escape }}
+                            </a>
+                        </ul>
+                        {% endfor %}
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        {% if form.non_field_errors %}
+            {{ form.non_field_errors }}
+        {% endif %}
+    </div>
+<!-- end blocks/errors.html -->
+{% endif %}

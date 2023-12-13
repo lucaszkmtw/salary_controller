@@ -1,0 +1,59 @@
+{% extends 'marco.html' %}
+{% load widget_tweaks %}
+
+{% block title %}
+<title>Proyecto</title>
+{% endblock %}
+
+{% block css_mas %}
+{% endblock %}
+
+{% block marco %}
+<!-- template: detalle_proyecto.html -->
+
+<section class="content-header">
+    <h1>
+        Proyecto
+        <small>Update</small>
+    </h1>
+</section>
+
+<section class="content">
+    {% include "blocks/messages.html" %}
+    {% include "blocks/errors.html" %}
+    <div class="box box-success">
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="modifier" value="{{ user.id }}">
+            <input type="hidden" name="modified" value='{% now "d/m/Y H:i" %}' data-date-format="DD/MM/YYYY hh:mm">
+            <div class="box-header with-border">
+                <h3 class="box-title">Modificar Proyecto</h3>
+                <div class="pull-right box-tools">
+                    <a href="{% url 'proyecto-detail' proyecto.id %}" class="btn btn-sm btn-info">Ver</a>
+                    <a href="{% url 'proyecto-list' %}" class="btn btn-sm btn-primary">Ver todas</a>
+                </div>
+            </div>
+            <div class="box-body">
+                {% for field in form %}
+                    <div class="form-group {% if field.errors %} has-error {% endif %}">
+                        {% render_field field|add_class:"form-control" type=field.widget_type %}
+                        {% if field.errors %}
+                            <span class="help-block">
+                                {{ field.errors }}
+                            </span>
+                        {% endif %}
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="box-footer">
+                <a href="{% url 'proyecto-list' %}" class="btn btn-danger">Cancelar</a>
+                <button type="submit" class="btn btn-warning pull-right">Actualizar</button>
+            </div>
+        </form>
+    </div>
+
+</section>
+{% endblock %}
+
+{% block js_mas %}
+{% endblock %}

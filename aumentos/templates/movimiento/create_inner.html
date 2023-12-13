@@ -1,0 +1,36 @@
+<!-- template: movimiento/create_inner.html -->
+{% load widget_tweaks %}
+
+      {% if perms.aumentos.add_movimiento %}
+        <form method="POST" action={% url 'movimiento-create' %}>
+          {% csrf_token %}
+          <input type="hidden" name="proyecto" id="id_proyecto" value="{{ proyecto_id }}">
+          <input type="hidden" name="creator" id="id_creator" value="{{ user.id }}">
+          {% for field in form %}
+            {% if field.label != "Creator" and field.label != "Proyecto" %}
+              <div class="form-group {% if field.errors %} has-error {% endif %}" >
+                  <label class="form-control-label" for="{{ field.id_for_label }}">
+                      {{ field.label }}
+                  </label>
+                  {% render_field field|add_class:"form-control" type=field.widget_type%}
+                  {% if field.errors %}
+                      <span class="help-block">
+                          {{ field.errors }}
+                      </span>
+                  {% endif %}
+              </div>
+            {% endif %}
+          {% endfor %}
+          <button type="submit" class="btn btn-success pull-right">Crear</button>
+        </form>
+      {% else %}
+        <div class="modal-body">
+          <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <h4><i class="icon fa fa-ban"></i> Error!</h4>
+            No tiene permisos para crear un movimiento.
+          </div>
+        </div>
+      {% endif %}
+
+<!-- template: movimiento/create_inner.html -->

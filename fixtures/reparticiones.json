@@ -1,0 +1,7123 @@
+[
+    {
+      "model": "hiscar.reparticion",
+      "pk": 2,
+      "fields": {
+        "codigo": "253",
+        "nombre": "ASTILLERO RIO SANTIAGO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:43:51.655Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 3,
+      "fields": {
+        "codigo": "1000",
+        "nombre": "PODER EJECUTIVO",
+        "created": "2019-11-06T16:12:15Z",
+        "modified": "2019-12-04T12:43:40Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 4,
+      "fields": {
+        "codigo": "1100",
+        "nombre": "GOBERNACION",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:43:38.376Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 5,
+      "fields": {
+        "codigo": "1101",
+        "nombre": "ASESOR CONSEJO PROVINCIAL DE DESARROLLO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:43:36.220Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 6,
+      "fields": {
+        "codigo": "1102",
+        "nombre": "ASESOR CONSEJO ADMINISTRATIVO  PROVINCIAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:43:34.180Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 7,
+      "fields": {
+        "codigo": "1103",
+        "nombre": "ASESOR GENERAL DE GOBIERNO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:43:28.349Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 8,
+      "fields": {
+        "codigo": "1104",
+        "nombre": "COMISION INVESTIGACIONES CIENTIFICAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:43:32.104Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 9,
+      "fields": {
+        "codigo": "1105",
+        "nombre": "JUNTA PROVINCIAL DEFENSA CIVIL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:43:18.119Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 10,
+      "fields": {
+        "codigo": "1106",
+        "nombre": "INFORMACION Y PERSONAL SECRETARIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:43:16.706Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 11,
+      "fields": {
+        "codigo": "1107",
+        "nombre": "PRENSA DIFUSION RELACIONES PUBLICAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:43:14.439Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 12,
+      "fields": {
+        "codigo": "1108",
+        "nombre": "CEREMONIAL Y AUDIENCIAS SECRETARIAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:43:12.812Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 13,
+      "fields": {
+        "codigo": "1109",
+        "nombre": "SECRETARIA ADMINISTRATIVA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:43:53.380Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 14,
+      "fields": {
+        "codigo": "1110",
+        "nombre": "AUTOMOTOR EMBARCACIONES DEL ESTADO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:43:56.130Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 15,
+      "fields": {
+        "codigo": "1112",
+        "nombre": "SUMARIOS DIRECCION DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:43:58.300Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 16,
+      "fields": {
+        "codigo": "1113",
+        "nombre": "GABINETE DIRECCION DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:43:59.805Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 17,
+      "fields": {
+        "codigo": "1114",
+        "nombre": "ADMINISTRATIVA DIRECCION DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:02.462Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 18,
+      "fields": {
+        "codigo": "1115",
+        "nombre": "SERVICIOS GENERALES DIRECCION DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:03.807Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 19,
+      "fields": {
+        "codigo": "1116",
+        "nombre": "CASA DE LA PROVINCIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:04.865Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 20,
+      "fields": {
+        "codigo": "1117",
+        "nombre": "INFORMACIONES DIRECCION DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:05.987Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 21,
+      "fields": {
+        "codigo": "1118",
+        "nombre": "PRENSA Y DIFUSION SUBDIRECCION",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:07.195Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 22,
+      "fields": {
+        "codigo": "1119",
+        "nombre": "RADIO SUBDIRECCION DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:15.477Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 23,
+      "fields": {
+        "codigo": "1120",
+        "nombre": "EJECUTIVA DIRECCION DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:16.365Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 24,
+      "fields": {
+        "codigo": "1128",
+        "nombre": "FERROBAIRES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:17.122Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 25,
+      "fields": {
+        "codigo": "1200",
+        "nombre": "GOBIERNO MINISTERIO DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:17.940Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 26,
+      "fields": {
+        "codigo": "1201",
+        "nombre": "SUBSECRETARIA DE JUSTICIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:18.645Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 27,
+      "fields": {
+        "codigo": "1202",
+        "nombre": "ESTABLECIMIENTOS PENALES DIRECCION DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:19.531Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 28,
+      "fields": {
+        "codigo": "1204",
+        "nombre": "DIRECCION PERSONA JURIDICA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:20.517Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 29,
+      "fields": {
+        "codigo": "1207",
+        "nombre": "SUBSECRETARIA DE GOBIERNO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:21.787Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 30,
+      "fields": {
+        "codigo": "1208",
+        "nombre": "TELEGRAFO DE PA PROVINCIA BUENOS AIRES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:24.014Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 31,
+      "fields": {
+        "codigo": "1209",
+        "nombre": "REGISTRO PROVINCIA DE LAS PERSONAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:23.229Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 32,
+      "fields": {
+        "codigo": "1210",
+        "nombre": "AERONAUTICA  DIRECCION DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:29.531Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 33,
+      "fields": {
+        "codigo": "1212",
+        "nombre": "IMPRESIONES DEL ESTADO Y BOLETIN  OFICIAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:31.036Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 34,
+      "fields": {
+        "codigo": "1213",
+        "nombre": "POLICIA PROVINCIA DE BUENOS AIRES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:32.028Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 35,
+      "fields": {
+        "codigo": "1215",
+        "nombre": "ASUNTOS MUNICIPALES DIRECCION DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:32.814Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 36,
+      "fields": {
+        "codigo": "1217",
+        "nombre": "MINISTERIO GOBIERNO PERSONAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:33.507Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 37,
+      "fields": {
+        "codigo": "1218",
+        "nombre": "DIRECCION DE ADMINISTRACION MINISTERIO DE GOBIERNO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:34.332Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 38,
+      "fields": {
+        "codigo": "1221",
+        "nombre": "DRECCION DE SUMINISTROS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:35.139Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 39,
+      "fields": {
+        "codigo": "1222",
+        "nombre": "PALACIO LEGISLATIVO INTERVENCION",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:35.902Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 40,
+      "fields": {
+        "codigo": "1225",
+        "nombre": "SUBSECRETARIA ASUNTOS MUNICIPALES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:38.108Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 41,
+      "fields": {
+        "codigo": "1227",
+        "nombre": "DIRECCION PROVINCIAL DE RECLAMOS OIR",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:39.491Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 42,
+      "fields": {
+        "codigo": "1240",
+        "nombre": "COMISION INVESTIGACIONES CIENTIFICAS (C.I.C.)",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:45.299Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 43,
+      "fields": {
+        "codigo": "1300",
+        "nombre": "MINISTERIO DE ECONOMIA MESA DE ENTRADAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:45.993Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 44,
+      "fields": {
+        "codigo": "1304",
+        "nombre": "DIRECCION PROVICIAL DE PRESUPUESTO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:46.569Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 45,
+      "fields": {
+        "codigo": "1305",
+        "nombre": "DIRECCION CATASTRO MESA DE ENTRADAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:47.160Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 46,
+      "fields": {
+        "codigo": "1306",
+        "nombre": "REGISTRO DE LA PROPIEDAD DIRECCION DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:48.025Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 47,
+      "fields": {
+        "codigo": "1307",
+        "nombre": "LOTERIA DIRECCION DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:48.625Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 48,
+      "fields": {
+        "codigo": "1316",
+        "nombre": "SUBSECRETARIA DE TRABAJO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:49.226Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 49,
+      "fields": {
+        "codigo": "1321",
+        "nombre": "MINISTERIO. ECONOMIA PERSONAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:50.890Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 50,
+      "fields": {
+        "codigo": "1400",
+        "nombre": "MINISTERIO DE OBRAS PUBLICAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:53.324Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 51,
+      "fields": {
+        "codigo": "1403",
+        "nombre": "OBRAS SANITARIAS DIRECCION DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:44:54.501Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 52,
+      "fields": {
+        "codigo": "1404",
+        "nombre": "HIDRAULICA DIRECCION DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:00.496Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 53,
+      "fields": {
+        "codigo": "1405",
+        "nombre": "DIRECCION DE TRASPORTE MINISTERIO DE OBRAS PUBLICAS.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:01.840Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 54,
+      "fields": {
+        "codigo": "1407",
+        "nombre": "DIRECCION DE ARQUITECTURA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:02.553Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 55,
+      "fields": {
+        "codigo": "1410",
+        "nombre": "MINISTERIO DE OBRAS PUBLICAS PERSONAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:03.283Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 56,
+      "fields": {
+        "codigo": "1422",
+        "nombre": "DIRECCION ENERGIA (D.E.B.A.)",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:03.945Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 57,
+      "fields": {
+        "codigo": "1424",
+        "nombre": "INSTITUTO DE LA VIVIENDA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:04.628Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 58,
+      "fields": {
+        "codigo": "1425",
+        "nombre": "LEMIT",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:05.249Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 59,
+      "fields": {
+        "codigo": "1426",
+        "nombre": "SERVICIO PROVINCIAL DE AGUA POTABLE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:06.041Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 60,
+      "fields": {
+        "codigo": "1428",
+        "nombre": "E.S.E.B.A",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:08.419Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 61,
+      "fields": {
+        "codigo": "1500",
+        "nombre": "BIENESTAR SOCIAL MINISTERIO DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:07.153Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 62,
+      "fields": {
+        "codigo": "1511",
+        "nombre": "INSTITUTO DE PREVISION SOCIAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:13.204Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 63,
+      "fields": {
+        "codigo": "1518",
+        "nombre": "OBRA MEDICO ASISTENCIAL INSTITUTO DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:13.962Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 64,
+      "fields": {
+        "codigo": "1519",
+        "nombre": "DIRECCION DE MENORES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:14.612Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 65,
+      "fields": {
+        "codigo": "1523",
+        "nombre": "MINISTERIO  BIENESTAR SOCIAL PERSONAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:15.156Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 66,
+      "fields": {
+        "codigo": "1529",
+        "nombre": "ASESORIA GENERAL DE GOBIERNO DELEGACION",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:15.701Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 67,
+      "fields": {
+        "codigo": "1600",
+        "nombre": "DIRECCION GENERAL DE CULTURA Y EDUCACION",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:16.227Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 68,
+      "fields": {
+        "codigo": "1601",
+        "nombre": "COLEGIOS MUNICIPALES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:24.805Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 69,
+      "fields": {
+        "codigo": "1602",
+        "nombre": "COLEGIOS TRANSFERIDOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:17.424Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 70,
+      "fields": {
+        "codigo": "1603",
+        "nombre": "COLEGIOS PRIVADOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:21.407Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 71,
+      "fields": {
+        "codigo": "1604",
+        "nombre": "DOCENTES MINISTERIALES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:20.676Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 72,
+      "fields": {
+        "codigo": "1615",
+        "nombre": "CULTURA SUBSECRETARIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:28.459Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 73,
+      "fields": {
+        "codigo": "1618",
+        "nombre": "TEATRO ARGENTINO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:29.309Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 74,
+      "fields": {
+        "codigo": "1624",
+        "nombre": "UNIVERSIDAD PROVINCIA DE BUENOS AIRES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:29.850Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 75,
+      "fields": {
+        "codigo": "1625",
+        "nombre": "MINISTERIO EDUCACION PERSONAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:30.363Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 76,
+      "fields": {
+        "codigo": "1630",
+        "nombre": "DENO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:30.840Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 77,
+      "fields": {
+        "codigo": "1631",
+        "nombre": "EL HOGAR OBRERO C.C.E Y C. LTDA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:31.334Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 78,
+      "fields": {
+        "codigo": "1640",
+        "nombre": "INSTITUTO CULTURAL PROVINCIA BUENOS AIRES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:31.901Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 79,
+      "fields": {
+        "codigo": "1700",
+        "nombre": "ASUNTOS AGRARIOS MINISTERIO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:32.420Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 80,
+      "fields": {
+        "codigo": "1801",
+        "nombre": "TESORERIA GENERAL DE LA PROVINCIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:38.421Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 81,
+      "fields": {
+        "codigo": "1802",
+        "nombre": "CONTADURIA GENERAL DE LA PROVINCIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-12-04T12:45:39.217Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 82,
+      "fields": {
+        "codigo": "1803",
+        "nombre": "TRIBUNAL DE CUENTAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 83,
+      "fields": {
+        "codigo": "1804",
+        "nombre": "FISCALIA DE ESTADO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 84,
+      "fields": {
+        "codigo": "1900",
+        "nombre": "ACCION SOCIAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 85,
+      "fields": {
+        "codigo": "1901",
+        "nombre": "BANCO DE LA PROVINCIA DE BUENOS AIRES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 86,
+      "fields": {
+        "codigo": "1902",
+        "nombre": "HIPODROMO LA PLATA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 87,
+      "fields": {
+        "codigo": "1904",
+        "nombre": "DIRECCION PROVINCIAL DE DELEGACIONES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 88,
+      "fields": {
+        "codigo": "1905",
+        "nombre": "VIALIDAD",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 89,
+      "fields": {
+        "codigo": "1906",
+        "nombre": "INSTITUTO DE LA VIVIENDA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 90,
+      "fields": {
+        "codigo": "1907",
+        "nombre": "SUBSECRETARIA DE TRABAJO MINISTERIO ACCION SOCIAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 91,
+      "fields": {
+        "codigo": "1908",
+        "nombre": "CENTRO FOMENTO RIO COLORADO C.O.R.F.O",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 92,
+      "fields": {
+        "codigo": "1909",
+        "nombre": "ARCHIVO DIRECCION VIALIDAD",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 93,
+      "fields": {
+        "codigo": "1910",
+        "nombre": "ENTE  DESCENTRALIZADO BMLP",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 94,
+      "fields": {
+        "codigo": "1911",
+        "nombre": "INSTITUTO PROVINCIAL DEL EMPLEO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 95,
+      "fields": {
+        "codigo": "2000",
+        "nombre": "PODER LEGISLATIVO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 96,
+      "fields": {
+        "codigo": "2001",
+        "nombre": "SERVICIO PENITENCIARIO PCIA BS AS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 97,
+      "fields": {
+        "codigo": "2002",
+        "nombre": "A.R.B.A.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 98,
+      "fields": {
+        "codigo": "2003",
+        "nombre": "MINISTERIO DE INFRAESTRUCTURA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 99,
+      "fields": {
+        "codigo": "2004",
+        "nombre": "MINISTERIO DE ASUNTOS AGRARIOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 100,
+      "fields": {
+        "codigo": "2005",
+        "nombre": "A.F.I. P. ADMINISTRACION FEDERAL DE INGRESOS PUBLICOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 101,
+      "fields": {
+        "codigo": "2006",
+        "nombre": "CORFO - RIO COLORADO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 102,
+      "fields": {
+        "codigo": "2007",
+        "nombre": "AUTORIDAD DEL AGUA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 103,
+      "fields": {
+        "codigo": "2008",
+        "nombre": "SECRETARIA DE TURISMO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 104,
+      "fields": {
+        "codigo": "2009",
+        "nombre": "SECRETARIA DE DEPORTES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 105,
+      "fields": {
+        "codigo": "2010",
+        "nombre": "JUNTA ELECTORAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 106,
+      "fields": {
+        "codigo": "2011",
+        "nombre": "BANCO DE GALICIA Y BUENOS AIRES - S.A,.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 107,
+      "fields": {
+        "codigo": "2120",
+        "nombre": "RECONOCIMIENTOS MEDICOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 108,
+      "fields": {
+        "codigo": "2121",
+        "nombre": "MINISTERIO DE JEFATURA DE GABINETE DE MINISTROS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 109,
+      "fields": {
+        "codigo": "2122",
+        "nombre": "COORDINACION GENERAL UNIDAD GOBERNADOR",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 110,
+      "fields": {
+        "codigo": "2123",
+        "nombre": "REPARTICION PUNTA MOGOTES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 111,
+      "fields": {
+        "codigo": "2124",
+        "nombre": "CONSEJO DE LA MAGISTRATURA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 112,
+      "fields": {
+        "codigo": "2255",
+        "nombre": "HONORABLE CAMARA DE DIPUTADOS DE LA PROVICIA DE BS. AS.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 113,
+      "fields": {
+        "codigo": "3000",
+        "nombre": "PODER JUDICIAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 114,
+      "fields": {
+        "codigo": "3001",
+        "nombre": "SUPREMA CORTE DE JUSTICIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 115,
+      "fields": {
+        "codigo": "3002",
+        "nombre": "DEPARTAMENTO DE LA PLATA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 116,
+      "fields": {
+        "codigo": "3003",
+        "nombre": "DEPARTAMENTO MERCEDES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 117,
+      "fields": {
+        "codigo": "3004",
+        "nombre": "DEPARTAMENTO DE SAN NICOLAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 118,
+      "fields": {
+        "codigo": "3005",
+        "nombre": "DEPARTAMENTO DE DOLORES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 119,
+      "fields": {
+        "codigo": "3006",
+        "nombre": "DEPARTAMENTO DE BAHIA BLANCA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 120,
+      "fields": {
+        "codigo": "3007",
+        "nombre": "DEPARTAMENTO DE AZUL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 121,
+      "fields": {
+        "codigo": "3008",
+        "nombre": "DEPARTAMENTO DE MAR DEL PLATA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 122,
+      "fields": {
+        "codigo": "3009",
+        "nombre": "DEPARTAMENTO DE JUNIN",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 123,
+      "fields": {
+        "codigo": "3010",
+        "nombre": "DEPARTAMENTO DE SAN ISIDRO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 124,
+      "fields": {
+        "codigo": "3011",
+        "nombre": "DEPARTAMENTO DE SAN MARTIN",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 125,
+      "fields": {
+        "codigo": "3012",
+        "nombre": "JUZGADOS DE PAZ",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 126,
+      "fields": {
+        "codigo": "3013",
+        "nombre": "ALCALDIAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 127,
+      "fields": {
+        "codigo": "M000",
+        "nombre": "MUNICIPIOS PROVINCIA BUENOS AIRES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 128,
+      "fields": {
+        "codigo": "M001",
+        "nombre": "ADOLFO ALSINA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 129,
+      "fields": {
+        "codigo": "M002",
+        "nombre": "ALBERTI",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 130,
+      "fields": {
+        "codigo": "M003",
+        "nombre": "ALMIRANTE BROWN",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 131,
+      "fields": {
+        "codigo": "M004",
+        "nombre": "AVELANEDA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 132,
+      "fields": {
+        "codigo": "M005",
+        "nombre": "AYACUCHO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 133,
+      "fields": {
+        "codigo": "M006",
+        "nombre": "AZUL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 134,
+      "fields": {
+        "codigo": "M007",
+        "nombre": "BAHIA BLANCA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 135,
+      "fields": {
+        "codigo": "M008",
+        "nombre": "BALCARCE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 136,
+      "fields": {
+        "codigo": "M009",
+        "nombre": "BARADERO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 137,
+      "fields": {
+        "codigo": "M010",
+        "nombre": "ARRECIFES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 138,
+      "fields": {
+        "codigo": "M011",
+        "nombre": "BERAZATEGUI",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 139,
+      "fields": {
+        "codigo": "M012",
+        "nombre": "BERISSO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 140,
+      "fields": {
+        "codigo": "M013",
+        "nombre": "BOLIVAR",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 141,
+      "fields": {
+        "codigo": "M014",
+        "nombre": "BRAGADO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 142,
+      "fields": {
+        "codigo": "M015",
+        "nombre": "BRANDSEN",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 143,
+      "fields": {
+        "codigo": "M016",
+        "nombre": "CAMPANA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 144,
+      "fields": {
+        "codigo": "M017",
+        "nombre": "CAÑUELAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 145,
+      "fields": {
+        "codigo": "M018",
+        "nombre": "CAPITAN SARMIENTO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 146,
+      "fields": {
+        "codigo": "M019",
+        "nombre": "CARLOS CASARES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 147,
+      "fields": {
+        "codigo": "M020",
+        "nombre": "CARLOS TEJEDOR",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 148,
+      "fields": {
+        "codigo": "M021",
+        "nombre": "CARMEN DE ARECO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 149,
+      "fields": {
+        "codigo": "M022",
+        "nombre": "DAEREAUX",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 150,
+      "fields": {
+        "codigo": "M023",
+        "nombre": "CASTELLI",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 151,
+      "fields": {
+        "codigo": "M024",
+        "nombre": "COLON",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 152,
+      "fields": {
+        "codigo": "M025",
+        "nombre": "CORONEL ROSALES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 153,
+      "fields": {
+        "codigo": "M026",
+        "nombre": "CORONEL DORREGO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 154,
+      "fields": {
+        "codigo": "M027",
+        "nombre": "CORONEL PRINGLES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 155,
+      "fields": {
+        "codigo": "M028",
+        "nombre": "CORONEL SUAREZ",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 156,
+      "fields": {
+        "codigo": "M029",
+        "nombre": "CHACABUCO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 157,
+      "fields": {
+        "codigo": "M030",
+        "nombre": "CHASCOMUS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 158,
+      "fields": {
+        "codigo": "M031",
+        "nombre": "CHIVILCOY",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 159,
+      "fields": {
+        "codigo": "M032",
+        "nombre": "DOLORES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 160,
+      "fields": {
+        "codigo": "M033",
+        "nombre": "ENSENADA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 161,
+      "fields": {
+        "codigo": "M034",
+        "nombre": "ESCOBAR",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 162,
+      "fields": {
+        "codigo": "M035",
+        "nombre": "ESTEBAN ECHEVERRIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 163,
+      "fields": {
+        "codigo": "M036",
+        "nombre": "EXALTACION DE LA CRUZ",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 164,
+      "fields": {
+        "codigo": "M037",
+        "nombre": "FLORENCIA VARELA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 165,
+      "fields": {
+        "codigo": "M038",
+        "nombre": "GENERAL ALVARADO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 166,
+      "fields": {
+        "codigo": "M039",
+        "nombre": "GENERAL  ALVEAR",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 167,
+      "fields": {
+        "codigo": "M040",
+        "nombre": "GENERAL ARENALES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 168,
+      "fields": {
+        "codigo": "M041",
+        "nombre": "GENERAL BELGRANO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 169,
+      "fields": {
+        "codigo": "M042",
+        "nombre": "GENERAL GUIDO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 170,
+      "fields": {
+        "codigo": "M043",
+        "nombre": "GENERAL MADARIAGA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 171,
+      "fields": {
+        "codigo": "M044",
+        "nombre": "GENERAL LAMADRID",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 172,
+      "fields": {
+        "codigo": "M045",
+        "nombre": "GENERAL LAS HERAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 173,
+      "fields": {
+        "codigo": "M046",
+        "nombre": "GENERAL LAVALLE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 174,
+      "fields": {
+        "codigo": "M047",
+        "nombre": "GENERAL PAZ",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 175,
+      "fields": {
+        "codigo": "M048",
+        "nombre": "GENERAL PINTO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 176,
+      "fields": {
+        "codigo": "M049",
+        "nombre": "GENERAL PUEYRREDON",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 177,
+      "fields": {
+        "codigo": "M050",
+        "nombre": "GENERAL RODRIGUEZ",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 178,
+      "fields": {
+        "codigo": "M051",
+        "nombre": "GENERAL SAN  MARTIN",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 179,
+      "fields": {
+        "codigo": "M052",
+        "nombre": "SAN MIGUEL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 180,
+      "fields": {
+        "codigo": "M053",
+        "nombre": "GENERAL VIAMONTE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 181,
+      "fields": {
+        "codigo": "M054",
+        "nombre": "GENERAL VILLEGAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 182,
+      "fields": {
+        "codigo": "M055",
+        "nombre": "GONZALEZ CHAVES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 183,
+      "fields": {
+        "codigo": "M056",
+        "nombre": "GUAMINI",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 184,
+      "fields": {
+        "codigo": "M057",
+        "nombre": "HIPOLITO YRIGOYEN",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 185,
+      "fields": {
+        "codigo": "M058",
+        "nombre": "JUAREZ",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 186,
+      "fields": {
+        "codigo": "M059",
+        "nombre": "JUNIN",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 187,
+      "fields": {
+        "codigo": "M060",
+        "nombre": "LANUS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 188,
+      "fields": {
+        "codigo": "M061",
+        "nombre": "LA PLATA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 189,
+      "fields": {
+        "codigo": "M062",
+        "nombre": "LAPRIDA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 190,
+      "fields": {
+        "codigo": "M063",
+        "nombre": "LAS FLORES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 191,
+      "fields": {
+        "codigo": "M064",
+        "nombre": "LEANDRO N. ALEM",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 192,
+      "fields": {
+        "codigo": "M065",
+        "nombre": "LINCOLN",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 193,
+      "fields": {
+        "codigo": "M066",
+        "nombre": "LOBERIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 194,
+      "fields": {
+        "codigo": "M067",
+        "nombre": "LOBOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 195,
+      "fields": {
+        "codigo": "M068",
+        "nombre": "LOMAS DE ZAMORA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 196,
+      "fields": {
+        "codigo": "M069",
+        "nombre": "LUJAN",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 197,
+      "fields": {
+        "codigo": "M070",
+        "nombre": "MAGDALENA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 198,
+      "fields": {
+        "codigo": "M071",
+        "nombre": "MAIPU",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 199,
+      "fields": {
+        "codigo": "M072",
+        "nombre": "MARCOS PAZ",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 200,
+      "fields": {
+        "codigo": "M073",
+        "nombre": "MAR CHIQUITA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 201,
+      "fields": {
+        "codigo": "M074",
+        "nombre": "MATANZA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 202,
+      "fields": {
+        "codigo": "M075",
+        "nombre": "MERCEDES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 203,
+      "fields": {
+        "codigo": "M076",
+        "nombre": "MERLO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 204,
+      "fields": {
+        "codigo": "M077",
+        "nombre": "MONTE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 205,
+      "fields": {
+        "codigo": "M078",
+        "nombre": "MORENO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 206,
+      "fields": {
+        "codigo": "M079",
+        "nombre": "MORON",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 207,
+      "fields": {
+        "codigo": "M080",
+        "nombre": "NAVARRO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 208,
+      "fields": {
+        "codigo": "M081",
+        "nombre": "NECOCHEA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 209,
+      "fields": {
+        "codigo": "M082",
+        "nombre": "9 DE JULIO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 210,
+      "fields": {
+        "codigo": "M083",
+        "nombre": "OLAVARRIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 211,
+      "fields": {
+        "codigo": "M084",
+        "nombre": "PATAGONES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 212,
+      "fields": {
+        "codigo": "M085",
+        "nombre": "PEHUAJO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 213,
+      "fields": {
+        "codigo": "M086",
+        "nombre": "PELLEGRINI",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 214,
+      "fields": {
+        "codigo": "M087",
+        "nombre": "PERGAMINO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 215,
+      "fields": {
+        "codigo": "M088",
+        "nombre": "PILA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 216,
+      "fields": {
+        "codigo": "M089",
+        "nombre": "PILAR",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 217,
+      "fields": {
+        "codigo": "M090",
+        "nombre": "PUAN",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 218,
+      "fields": {
+        "codigo": "M091",
+        "nombre": "QUILMES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 219,
+      "fields": {
+        "codigo": "M092",
+        "nombre": "RAMALLO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 220,
+      "fields": {
+        "codigo": "M093",
+        "nombre": "RAUCH",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 221,
+      "fields": {
+        "codigo": "M094",
+        "nombre": "RIVADAVIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 222,
+      "fields": {
+        "codigo": "M095",
+        "nombre": "ROJAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 223,
+      "fields": {
+        "codigo": "M096",
+        "nombre": "ROQUE PEREZ",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 224,
+      "fields": {
+        "codigo": "M097",
+        "nombre": "SAAVEDRA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 225,
+      "fields": {
+        "codigo": "M098",
+        "nombre": "SALADILLO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 226,
+      "fields": {
+        "codigo": "M099",
+        "nombre": "SALTO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 227,
+      "fields": {
+        "codigo": "M100",
+        "nombre": "SALLIQUELO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 228,
+      "fields": {
+        "codigo": "M101",
+        "nombre": "SAN ANDRES DE GILES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 229,
+      "fields": {
+        "codigo": "M102",
+        "nombre": "SAN ANTONIO ARECO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 230,
+      "fields": {
+        "codigo": "M103",
+        "nombre": "SAN CAYETANO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 231,
+      "fields": {
+        "codigo": "M104",
+        "nombre": "SAN FERNANDO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 232,
+      "fields": {
+        "codigo": "M105",
+        "nombre": "SAN ISIDRO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 233,
+      "fields": {
+        "codigo": "M106",
+        "nombre": "SAN NICOLAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 234,
+      "fields": {
+        "codigo": "M107",
+        "nombre": "SAN PEDRO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 235,
+      "fields": {
+        "codigo": "M108",
+        "nombre": "SAN VICENTE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 236,
+      "fields": {
+        "codigo": "M109",
+        "nombre": "SUIPACHA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 237,
+      "fields": {
+        "codigo": "M110",
+        "nombre": "TANDIL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 238,
+      "fields": {
+        "codigo": "M111",
+        "nombre": "TAPALQUE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 239,
+      "fields": {
+        "codigo": "M112",
+        "nombre": "TIGRE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 240,
+      "fields": {
+        "codigo": "M113",
+        "nombre": "TORDILLO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 241,
+      "fields": {
+        "codigo": "M114",
+        "nombre": "TORQUINST",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 242,
+      "fields": {
+        "codigo": "M115",
+        "nombre": "TRENQUE LAUNQUEN",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 243,
+      "fields": {
+        "codigo": "M116",
+        "nombre": "TRES ARROYOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 244,
+      "fields": {
+        "codigo": "M117",
+        "nombre": "TRES DE FEBRERO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 245,
+      "fields": {
+        "codigo": "M118",
+        "nombre": "25 DE MAYO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 246,
+      "fields": {
+        "codigo": "M119",
+        "nombre": "VICENTE LOPEZ",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 247,
+      "fields": {
+        "codigo": "M120",
+        "nombre": "VILLARINO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 248,
+      "fields": {
+        "codigo": "M121",
+        "nombre": "ZARATE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 249,
+      "fields": {
+        "codigo": "M122",
+        "nombre": "MUNICIPIO URBANO DE LA COSTA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 250,
+      "fields": {
+        "codigo": "M123",
+        "nombre": "MUNICIPIO URBANO DE PINAMAR",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 251,
+      "fields": {
+        "codigo": "M124",
+        "nombre": "MUNICIPIO URBANO VILLA GESELL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 252,
+      "fields": {
+        "codigo": "M125",
+        "nombre": "MUNICIPIO URBANO DE MONTE HERMOSO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 253,
+      "fields": {
+        "codigo": "M126",
+        "nombre": "TRES LOMAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2020-02-17T12:40:35.860Z",
+        "is_active": true,
+        "has_modulo": true,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 254,
+      "fields": {
+        "codigo": "M129",
+        "nombre": "FLORENTINO AMEGHINO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 255,
+      "fields": {
+        "codigo": "M130",
+        "nombre": "EZEIZA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 256,
+      "fields": {
+        "codigo": "M131",
+        "nombre": "PRESIDENTE PERON",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 257,
+      "fields": {
+        "codigo": "M132",
+        "nombre": "JOSE C. PAZ",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 258,
+      "fields": {
+        "codigo": "M133",
+        "nombre": "MALVINAS ARGENTINAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 259,
+      "fields": {
+        "codigo": "M134",
+        "nombre": "PUNTA INDIO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 260,
+      "fields": {
+        "codigo": "M135",
+        "nombre": "HURLINGHAM",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 261,
+      "fields": {
+        "codigo": "M136",
+        "nombre": "ITUZAINGO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 262,
+      "fields": {
+        "codigo": "M137",
+        "nombre": "LEZAMA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": true,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 263,
+      "fields": {
+        "codigo": "5000",
+        "nombre": "ORGANO DE LA CONSTITUCION NACIONAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 264,
+      "fields": {
+        "codigo": "5001",
+        "nombre": "PRESIDENCIA DE LA NACION",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 265,
+      "fields": {
+        "codigo": "5002",
+        "nombre": "ORGANO DE LA PRESIDENCIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 266,
+      "fields": {
+        "codigo": "5003",
+        "nombre": "C.O.N.A.D.E.SECRETARIA DEL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 267,
+      "fields": {
+        "codigo": "5004",
+        "nombre": "C.O.N.A.S.E.SECRETARIAS DEL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 268,
+      "fields": {
+        "codigo": "5005",
+        "nombre": "JEFATURA COMANDANTE JEFE DE LAS FF.AA.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 269,
+      "fields": {
+        "codigo": "5035",
+        "nombre": "ESTEBAN ECHEVERRIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 270,
+      "fields": {
+        "codigo": "5100",
+        "nombre": "INTERIOR MINISTERIO DEL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 271,
+      "fields": {
+        "codigo": "5103",
+        "nombre": "GOBIERNO SUBSECRETRIA DE ESTADO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 272,
+      "fields": {
+        "codigo": "5105",
+        "nombre": "MINISTERIO DE CULTURA Y EDUCACION",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 273,
+      "fields": {
+        "codigo": "5109",
+        "nombre": "JUSTICIA MINISTERIO DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 274,
+      "fields": {
+        "codigo": "5111",
+        "nombre": "COMUNICACIONES SECRETARIA DE ESTADO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 275,
+      "fields": {
+        "codigo": "5113",
+        "nombre": "TELECOMUNICACIONES DIRECCION DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 276,
+      "fields": {
+        "codigo": "5114",
+        "nombre": "E.N.C.O.T.E.L.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 277,
+      "fields": {
+        "codigo": "5116",
+        "nombre": "COMISION ARGENTINA DE INFORMATICA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 278,
+      "fields": {
+        "codigo": "5200",
+        "nombre": "RELACIONES EXTERIORES Y CULTO MINISTERIO. DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 279,
+      "fields": {
+        "codigo": "5201",
+        "nombre": "SUBSECRETARIA ACCION SOCIAL NACIONAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 280,
+      "fields": {
+        "codigo": "5205",
+        "nombre": "MINISTERIO DE SALUD",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 281,
+      "fields": {
+        "codigo": "5274",
+        "nombre": "MINISTERIO DE COORDINACION Y GESTION PUBLICA.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 282,
+      "fields": {
+        "codigo": "5275",
+        "nombre": "FERROBAIRES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 283,
+      "fields": {
+        "codigo": "5276",
+        "nombre": "ABSA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 284,
+      "fields": {
+        "codigo": "5280",
+        "nombre": "SUBSECRETARIA DE ACTICIDADES PORTUARIAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 285,
+      "fields": {
+        "codigo": "5300",
+        "nombre": "MINISTERIO DE ECONOMIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 286,
+      "fields": {
+        "codigo": "5301",
+        "nombre": "SECRETARIA DE ESTADO DE AGRICULTURA Y GANADERIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 287,
+      "fields": {
+        "codigo": "5305",
+        "nombre": "D.G.I.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 288,
+      "fields": {
+        "codigo": "5306",
+        "nombre": "LOTERIA DE BENEFICIENCIA  NACIONAL Y CASINOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 289,
+      "fields": {
+        "codigo": "5307",
+        "nombre": "DIRECCION DE ADUANAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 290,
+      "fields": {
+        "codigo": "5319",
+        "nombre": "MINISTERIO DE TRABAJO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 291,
+      "fields": {
+        "codigo": "5321",
+        "nombre": "MINISTERIO DE OBRAS Y SERVICIOS PUBLICOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 292,
+      "fields": {
+        "codigo": "5323",
+        "nombre": "TRANSPORTE SECRETARIA DE ESTADO DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 293,
+      "fields": {
+        "codigo": "5400",
+        "nombre": "DEFENSA NACIONAL MINISTERIO DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 294,
+      "fields": {
+        "codigo": "5401",
+        "nombre": "DEFENSA SUBSECRETARIA ESTAD.DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 295,
+      "fields": {
+        "codigo": "5402",
+        "nombre": "COMANDO EN JEFE DEL EJERCITO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 296,
+      "fields": {
+        "codigo": "5403",
+        "nombre": "COMANDO EN JEFE DE LA ARMADA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 297,
+      "fields": {
+        "codigo": "5404",
+        "nombre": "COMANDO EN JEFE FUERZA AEREA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 298,
+      "fields": {
+        "codigo": "5405",
+        "nombre": "OCABA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 299,
+      "fields": {
+        "codigo": "5500",
+        "nombre": "BIENESTAR SOCIAL MINISTERIO DE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 300,
+      "fields": {
+        "codigo": "5501",
+        "nombre": "A.F.A.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 301,
+      "fields": {
+        "codigo": "5502",
+        "nombre": "MINISTERIO DE SEGURIDAD PROVINCIA BUENOS AIRES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 302,
+      "fields": {
+        "codigo": "5503",
+        "nombre": "SEGURIDAD SOCIAL SECRETARIA DE ESTADO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 303,
+      "fields": {
+        "codigo": "5508",
+        "nombre": "SALUD PUBLICA SECRETARIA DE ESTADO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 304,
+      "fields": {
+        "codigo": "5519",
+        "nombre": "BIENESTAR SOCIAL SUBSCRETARIA DE ESTADO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 305,
+      "fields": {
+        "codigo": "5520",
+        "nombre": "SUBSECRETARIA DE ACCION SOCIAL NACIONAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 306,
+      "fields": {
+        "codigo": "5521",
+        "nombre": "CENTRO NACIONAL DE RECONOCIMIENTOS MEDICOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 307,
+      "fields": {
+        "codigo": "5601",
+        "nombre": "POLICIA FEDERAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 308,
+      "fields": {
+        "codigo": "5602",
+        "nombre": "MUNICIPALIDAD DE BUENOS AIRES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 309,
+      "fields": {
+        "codigo": "5603",
+        "nombre": "UNIVERSIDADES NACIONALES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 310,
+      "fields": {
+        "codigo": "5604",
+        "nombre": "CONSEJO NACIONAL DE EDUCACION",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 311,
+      "fields": {
+        "codigo": "5605",
+        "nombre": "CONSEJO NACIONAL EDUCACION TECNICA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 312,
+      "fields": {
+        "codigo": "5606",
+        "nombre": "UNIVERSIDAD TECNOLOGICA NACIONAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 313,
+      "fields": {
+        "codigo": "5607",
+        "nombre": "CONSEJO NACIONAL RADIODIFUSION Y TELEVISION",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 314,
+      "fields": {
+        "codigo": "5608",
+        "nombre": "INSTITUTO NACIONALTECNICA AGROPECUARIA (I.N.T.A.)",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 315,
+      "fields": {
+        "codigo": "5609",
+        "nombre": "SELSA SERVICIO EXPLOTACION LUCHA S ANIMAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 316,
+      "fields": {
+        "codigo": "5610",
+        "nombre": "TRIBUNAL FISCAL DE LA NACION",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 317,
+      "fields": {
+        "codigo": "5611",
+        "nombre": "INSTITUTO SUPERIOR ADMINISTRACION PUBLICA(I.S.A.P.)",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 318,
+      "fields": {
+        "codigo": "5612",
+        "nombre": "OBRAS SANITARIAS NACION(O.S.N.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 319,
+      "fields": {
+        "codigo": "5613",
+        "nombre": "VIALIDAD NACIONAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 320,
+      "fields": {
+        "codigo": "5614",
+        "nombre": "BANCO CENTRAL REPUBLICA ARGENTINA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 321,
+      "fields": {
+        "codigo": "5615",
+        "nombre": "BANCO DE LA NACION ARGENTINA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 322,
+      "fields": {
+        "codigo": "5616",
+        "nombre": "BANCO INDUSTRIAL REPUBLICA ARGENTINA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 323,
+      "fields": {
+        "codigo": "5617",
+        "nombre": "CAJA NACIONAL DE AHORRO POSTAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 324,
+      "fields": {
+        "codigo": "5618",
+        "nombre": "SERVICIO SOCIAL PERSONAL FERROVIARIO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 325,
+      "fields": {
+        "codigo": "5619",
+        "nombre": "REGISTRO NACIONAL DE LAS PERSONAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 326,
+      "fields": {
+        "codigo": "5620",
+        "nombre": "FABRICACIONES MILITARES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 327,
+      "fields": {
+        "codigo": "5621",
+        "nombre": "INSTITUTO GEOGRAFICO MILITAR",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 328,
+      "fields": {
+        "codigo": "5622",
+        "nombre": "PREFECTURA NACIONAL MARITIMA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 329,
+      "fields": {
+        "codigo": "5623",
+        "nombre": "CONSEJO NACIONAL ASISTENCIA SOCIAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 330,
+      "fields": {
+        "codigo": "5624",
+        "nombre": "ASISTENCIA PREVISIONAL SOCIAL FERROVIARIOS D.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 331,
+      "fields": {
+        "codigo": "5625",
+        "nombre": "COMISION NACIONAL REHABILITACION DEL LISIADO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 332,
+      "fields": {
+        "codigo": "5626",
+        "nombre": "INSTITUTO NACIONAL DE SALUD MENTAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 333,
+      "fields": {
+        "codigo": "5627",
+        "nombre": "INSTITUTO NACIONAL MICROBIOLOGIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 334,
+      "fields": {
+        "codigo": "5628",
+        "nombre": "CAJA FEDERAL DE LA VIVIENDA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 335,
+      "fields": {
+        "codigo": "5629",
+        "nombre": "BANCO HIPOTECARIO NACIONAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 336,
+      "fields": {
+        "codigo": "5630",
+        "nombre": "PRESTAMOS PERSONALES Y CON GARANTIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 337,
+      "fields": {
+        "codigo": "5631",
+        "nombre": "CONSEJO FEDERAL DE INVERSIONES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 338,
+      "fields": {
+        "codigo": "5632",
+        "nombre": "SUPER INT. NACIONAL ENSEÑANZA PRIVADA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 339,
+      "fields": {
+        "codigo": "5633",
+        "nombre": "F.O.N.A.V.I.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 340,
+      "fields": {
+        "codigo": "5634",
+        "nombre": "FACULTAD ODONTOLOGIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 341,
+      "fields": {
+        "codigo": "5700",
+        "nombre": "EMPRESAS ESTATALES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 342,
+      "fields": {
+        "codigo": "5701",
+        "nombre": "EMPRESA NACIONAL DE TELECOMUNICACIONES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 343,
+      "fields": {
+        "codigo": "5702",
+        "nombre": "AGUA Y ENERGIA ELECTRICA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 344,
+      "fields": {
+        "codigo": "5703",
+        "nombre": "YACIMIENTOS CARBONIFEROS FISCALES (Y.C.F.)",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 345,
+      "fields": {
+        "codigo": "5704",
+        "nombre": "YACIMIENTOS PETROLISFEROS FISCALES (Y.P.F.)",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 346,
+      "fields": {
+        "codigo": "5705",
+        "nombre": "GAS DEL ESTADO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 347,
+      "fields": {
+        "codigo": "5706",
+        "nombre": "LINEAS MARITIMAS ARGENTINAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 348,
+      "fields": {
+        "codigo": "5707",
+        "nombre": "FLOTA FLUVIAL ESTADO ARGENTINO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 349,
+      "fields": {
+        "codigo": "5708",
+        "nombre": "ADMINISTRACION GENERAL PUERTOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 350,
+      "fields": {
+        "codigo": "5709",
+        "nombre": "FERROCARRILES ARGENTINOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 351,
+      "fields": {
+        "codigo": "5710",
+        "nombre": "AEROLINEAS ARGENTINAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 352,
+      "fields": {
+        "codigo": "5711",
+        "nombre": "DINFIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 353,
+      "fields": {
+        "codigo": "5712",
+        "nombre": "ASTILLERO RIO SANTIAGO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 354,
+      "fields": {
+        "codigo": "5713",
+        "nombre": "INSTITUTO NACIONAL REASEGUROS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 355,
+      "fields": {
+        "codigo": "5714",
+        "nombre": "EMPRESAS PRIVADAS DEL ESTADO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 356,
+      "fields": {
+        "codigo": "5715",
+        "nombre": "S.E.G.B.A.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 357,
+      "fields": {
+        "codigo": "5716",
+        "nombre": "EMPRESAS NACIONALES MIXTAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 358,
+      "fields": {
+        "codigo": "5717",
+        "nombre": "SOMISA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 359,
+      "fields": {
+        "codigo": "5718",
+        "nombre": "ATANOR",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 360,
+      "fields": {
+        "codigo": "5720",
+        "nombre": "GENDARMERIA NACIONAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 361,
+      "fields": {
+        "codigo": "5800",
+        "nombre": "ORGANO DEL PODER JUDICIAL DE LA NACION",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 362,
+      "fields": {
+        "codigo": "5801",
+        "nombre": "HONORABLE CAMARA DIPUTADOS DE LA NACION",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 363,
+      "fields": {
+        "codigo": "5802",
+        "nombre": "SECRETARIA DE NIÑEZ Y ADOLECENCIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 364,
+      "fields": {
+        "codigo": "5804",
+        "nombre": "DEFENSORIA DEL PUEBLO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 365,
+      "fields": {
+        "codigo": "5900",
+        "nombre": "MINISTERIO DESARROLLO HUMANO Y FAMILIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 366,
+      "fields": {
+        "codigo": "5901",
+        "nombre": "MINISTERIO DE LA PRODUCCION",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 367,
+      "fields": {
+        "codigo": "6000",
+        "nombre": "DIRECCION GENERAL DE ESCUELAS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 368,
+      "fields": {
+        "codigo": "6001",
+        "nombre": "CATAMARCA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 369,
+      "fields": {
+        "codigo": "6002",
+        "nombre": "CHACO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 370,
+      "fields": {
+        "codigo": "6003",
+        "nombre": "CHUBUT",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 371,
+      "fields": {
+        "codigo": "6004",
+        "nombre": "CORDOBA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 372,
+      "fields": {
+        "codigo": "6005",
+        "nombre": "CORRIENTES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 373,
+      "fields": {
+        "codigo": "6006",
+        "nombre": "ENTRE RIOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 374,
+      "fields": {
+        "codigo": "6007",
+        "nombre": "FORMOSA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 375,
+      "fields": {
+        "codigo": "6008",
+        "nombre": "JUJUY",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 376,
+      "fields": {
+        "codigo": "6009",
+        "nombre": "PAMPA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 377,
+      "fields": {
+        "codigo": "6010",
+        "nombre": "LA RIOJA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 378,
+      "fields": {
+        "codigo": "6011",
+        "nombre": "MENDOZA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 379,
+      "fields": {
+        "codigo": "6012",
+        "nombre": "MISIONES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 380,
+      "fields": {
+        "codigo": "6013",
+        "nombre": "NEUQUEN",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 381,
+      "fields": {
+        "codigo": "6014",
+        "nombre": "SALTA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 382,
+      "fields": {
+        "codigo": "6015",
+        "nombre": "SANTIAGO DEL ESTERO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 383,
+      "fields": {
+        "codigo": "6016",
+        "nombre": "SAN LUIS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 384,
+      "fields": {
+        "codigo": "6017",
+        "nombre": "SAN JUAN",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 385,
+      "fields": {
+        "codigo": "6018",
+        "nombre": "SANTA FE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 386,
+      "fields": {
+        "codigo": "6019",
+        "nombre": "SANTA CRUZ",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 387,
+      "fields": {
+        "codigo": "6020",
+        "nombre": "RIO NEGRO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 388,
+      "fields": {
+        "codigo": "6021",
+        "nombre": "TIERRA DEL FUEGO TERRITORIO NACIONAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 389,
+      "fields": {
+        "codigo": "6022",
+        "nombre": "TUCUMAN",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 390,
+      "fields": {
+        "codigo": "6023",
+        "nombre": "CAPITAL FEDERAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 391,
+      "fields": {
+        "codigo": "6024",
+        "nombre": "REGISTRO DE LA PROPIEDAD DE SANTA FE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 392,
+      "fields": {
+        "codigo": "6025",
+        "nombre": "0TRAS PROVINCIAS Y CAPITAL FEDERAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 393,
+      "fields": {
+        "codigo": "7000",
+        "nombre": "ENTES PREVISIONALES LEY 7575 MDES,PROV.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 394,
+      "fields": {
+        "codigo": "7001",
+        "nombre": "CAJA NACIONAL PREVISIONAL INDUSTRIA COMERCIO ACT CIVIL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 395,
+      "fields": {
+        "codigo": "7002",
+        "nombre": "CAJA NACIONAL PREVISIONAL PERSONAL .ESTADO Y SERV PUB",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 396,
+      "fields": {
+        "codigo": "7003",
+        "nombre": "CAJA NACIONAL PREVISIONAL TRABAJADORES .AUTONOMOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 397,
+      "fields": {
+        "codigo": "7004",
+        "nombre": "INSTITUTO AYUDA FINANCIERA PAGOS RE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 398,
+      "fields": {
+        "codigo": "7005",
+        "nombre": "CAJA RETIRADOS POLICIA FEDERAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 399,
+      "fields": {
+        "codigo": "7006",
+        "nombre": "INSTITUTO PRESION SOCIAL MUNICIPAL CIUDAD BUENOS AIRES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 400,
+      "fields": {
+        "codigo": "7007",
+        "nombre": "CAJA RETIRADOS JUBILADOS Y PENSIONADOS POLICIA BS. AS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 401,
+      "fields": {
+        "codigo": "7008",
+        "nombre": "INSTITUTO NACIONAL DE SERVICIOS SOCIALES JUB Y PEN",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 402,
+      "fields": {
+        "codigo": "7010",
+        "nombre": "CAJA NACIONAL BANCARIOS Y SEGURO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 403,
+      "fields": {
+        "codigo": "7011",
+        "nombre": "CAJA PREVISIONAL SEGUROS MEDICO PROVINCIAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 404,
+      "fields": {
+        "codigo": "7012",
+        "nombre": "PREFECTURA NAVAL ARGENTINA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 405,
+      "fields": {
+        "codigo": "7190",
+        "nombre": "DIRECCION NACIONAL DE TRABAJO .-",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 406,
+      "fields": {
+        "codigo": "8000",
+        "nombre": "EMPRESA 19 DE NOVIEMBRE S.A.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 407,
+      "fields": {
+        "codigo": "8010",
+        "nombre": "HONORABLE CAMARA DIPUTADOS DE LA NACION",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 408,
+      "fields": {
+        "codigo": "8108",
+        "nombre": "CLUB ESTUDIANTES DE LA PLATA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 409,
+      "fields": {
+        "codigo": "8109",
+        "nombre": "SERVICIOS SOCIALES PERSONAL INDUSTRIA DE LA CARNE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 410,
+      "fields": {
+        "codigo": "8259",
+        "nombre": "COLEGIO DE ESCRIBANOS CONTRATADOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 411,
+      "fields": {
+        "codigo": "8300",
+        "nombre": "ORGANISMOS PARA ESTATALES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 412,
+      "fields": {
+        "codigo": "8301",
+        "nombre": "ENTIDADES DE BIEN PUBLICO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 413,
+      "fields": {
+        "codigo": "8302",
+        "nombre": "ASOCIACIONES GREMIALES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 414,
+      "fields": {
+        "codigo": "8303",
+        "nombre": "COLEGIO DE MEDICOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 415,
+      "fields": {
+        "codigo": "8304",
+        "nombre": "COLEGIO DE ODONTOLOGOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 416,
+      "fields": {
+        "codigo": "8305",
+        "nombre": "FEDERACION MEDICA PCIA.BS.AS.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 417,
+      "fields": {
+        "codigo": "8306",
+        "nombre": "COLEGIO DE ABOGADOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 418,
+      "fields": {
+        "codigo": "8307",
+        "nombre": "COLEGIO DE ESCRIBANOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 419,
+      "fields": {
+        "codigo": "8308",
+        "nombre": "COLEGIO DE FARMACEUTICOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 420,
+      "fields": {
+        "codigo": "8309",
+        "nombre": "COLEGIO PROFESIONALES CIENCIAS ECONOMIC.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 421,
+      "fields": {
+        "codigo": "8310",
+        "nombre": "CONSEJO PROFESIONAL DE LA INGENIERIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 422,
+      "fields": {
+        "codigo": "8311",
+        "nombre": "CONSEJO PROFESIONALES DE QUIMICA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 423,
+      "fields": {
+        "codigo": "8312",
+        "nombre": "FEDERACIONES PARA ANESTESIOLOGOS PROVINCIA BS .AS.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 424,
+      "fields": {
+        "codigo": "8314",
+        "nombre": "FEDERACION, CLINICA, SANATORIO Y HOSPITAL.PCIA.BS.AS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 425,
+      "fields": {
+        "codigo": "8315",
+        "nombre": "UNIVERSIDAD CATOLICA LA PLATA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 426,
+      "fields": {
+        "codigo": "8401",
+        "nombre": "JOCKEY CLUB DE LA PLATA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 427,
+      "fields": {
+        "codigo": "8402",
+        "nombre": "INSTITUTO NACIONAL .DE SERVICIOS SOCIALES JUB.PEN.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 428,
+      "fields": {
+        "codigo": "8403",
+        "nombre": "CAJA DE LA POLICIA DE LA PROVINCIA DE BUENOS AIRES",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 429,
+      "fields": {
+        "codigo": "8404",
+        "nombre": "SERVICIO PENITENCIARIO FEDERAL.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 430,
+      "fields": {
+        "codigo": "8405",
+        "nombre": "CAJA PREVISIONAL MARTILLEROS BS. AS.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 431,
+      "fields": {
+        "codigo": "8406",
+        "nombre": "REGISTRO PROPIEDAD INMUEBLES CAPITAL  FEDERAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 432,
+      "fields": {
+        "codigo": "8407",
+        "nombre": "CAJA CIVIL DE SALTO URUGUAY",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 433,
+      "fields": {
+        "codigo": "8408",
+        "nombre": "S.E.P.U.B.A.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 434,
+      "fields": {
+        "codigo": "8409",
+        "nombre": "U.P.C.N.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 435,
+      "fields": {
+        "codigo": "8410",
+        "nombre": "A.E.R.I.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 436,
+      "fields": {
+        "codigo": "8411",
+        "nombre": "CAJA SEGURIDAD SOCIAL PSICOLOGOS PCIA BS AS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 437,
+      "fields": {
+        "codigo": "8500",
+        "nombre": "COMP.SWITF DE ROSARIO",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 438,
+      "fields": {
+        "codigo": "8502",
+        "nombre": "LA ESTRELLA TRASNS. AUTOMOTORE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 439,
+      "fields": {
+        "codigo": "8503",
+        "nombre": "MICRO MAR S.A.DE TRANSPORTES.-",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 440,
+      "fields": {
+        "codigo": "8504",
+        "nombre": "U.O.C.R.A.",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 441,
+      "fields": {
+        "codigo": "8600",
+        "nombre": "ORGANO PROVINCIAL .PARA DESARROLLO SOSTENIBLE",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 442,
+      "fields": {
+        "codigo": "9000",
+        "nombre": "INSTITUTO NACIONAL  SEGURIDAD  SOCIAL. ESPAÑA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 443,
+      "fields": {
+        "codigo": "9400",
+        "nombre": "LISFI",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 444,
+      "fields": {
+        "codigo": "9401",
+        "nombre": "PATRONATO DE LIBERADOS",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 445,
+      "fields": {
+        "codigo": "9402",
+        "nombre": "DIRECCION PROVINCIAL DE ENERGIA",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    },
+    {
+      "model": "hiscar.reparticion",
+      "pk": 446,
+      "fields": {
+        "codigo": "9404",
+        "nombre": "UNIDAD EJEC. PROG. FERROV. PROVINCIAL",
+        "created": "2019-11-06T16:12:15.667Z",
+        "modified": "2019-11-06T16:12:15.667Z",
+        "is_active": false,
+        "has_modulo": false,
+        "creator": 1,
+        "deleted": null,
+        "eliminator": null,
+        "modifier": 1
+      }
+    }
+  ]
+  

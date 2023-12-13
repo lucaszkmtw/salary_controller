@@ -1,0 +1,59 @@
+<!-- template: formulario_aumento.html -->
+<div class="box box-default">
+    <div class="box-body ">
+        <div class="row">
+            <div class="col-xs-12">
+                <form action="" id="formulario-aumento">
+                    <table>
+                        <tr>
+                            <th class="col-xs-2" style="padding: 0px">
+                                <select class="form-control select" multiple id="campo-aumento">
+                  <option value="" disabled selected>Campo</option>
+                  {% for id, nombre in tipos_aumento.items %}
+                  <option value="{{nombre}}" obj-id="{{id}}">{{nombre}}</option>
+                  {% endfor %}
+                </select>
+                            </th>
+                            <th class="col-xs-2" style="padding: 0px">
+                                <input type="button" class="form-control" value="Periodos" id="sueldos-por-periodo-button">
+                            </th>
+                            <th class="col-xs-2" style="padding: 0px">
+                                <select id="valor-aumento" class="form-control" aria-hidden="true" required>
+                  <option value="" disabled selected>Valor</option>
+                  {% for id, nombre in tipos_calculo.items %}
+                      <option value="{{nombre}}" obj-id="{{id}}">{{nombre}}</option>
+                  {% endfor %}
+                </select>
+                            </th>
+
+                            <th class="col-xs-2" style="padding: 0px">
+                                <div class="input-group">
+                                    <span class="input-group-addon icono_tipo_calculo" id="icono_tipo_calculo"></span>
+                                    <input type="number" class="form-control" id="cant-aumento">
+                                </div>
+                            </th>
+
+                            <th class="col-xs-0.5">=</th>
+
+                            <th class="col-xs-2 resultado-aumento" style="padding: 0px">
+                                <input type="text" class="form-control" id="resultado-aumento">
+                            </th>
+
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <div class="btn-group pull-right" style="padding-top: 10px;">
+            <button class="btn btn-default agregar-aumento" id="agregar-aumento">
+        Agregar Aumento
+        <i class="fa fa-plus"></i>
+      </button>
+            <br />
+        </div>
+        <div class="btn-group pull-left" style="padding-top: 20px;">
+            <button class="btn btn-default" id="ocultar-aumento"><i class="fa fa-times"></i></button>
+            <br />
+        </div>
+    </div>
+</div>

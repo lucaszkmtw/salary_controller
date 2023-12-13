@@ -1,0 +1,61 @@
+version: '3.4'
+
+services:
+  app-siliq:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: app
+    command: sh -c "python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - DJANGO_SETTINGS_MODULE=project.settings.debug
+    env_file:
+      - .env
+    restart: on-failure
+
+  celery_worker-siliq:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: app-celery
+    volumes:
+      - staticfiles-siliq:/usr/src/app/staticfiles
+    environment:
+      - DJANGO_SETTINGS_MODULE=project.settings.production
+    command: sh -c "celery -A project worker -l info"
+
+  celery_beat-siliq:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: app-celery
+    environment:
+      - DJANGO_SETTINGS_MODULE=project.settings.production
+    command: sh -c "celery -A project beat -l info --scheduler django_celery_beat.schedulers:DatabaseScheduler"
+
+  jupyter-siliq:
+    build:
+      context: .
+      dockerfile: ./jupyter-notebooks/Dockerfile
+    depends_on:
+      - postgres-siliq
+      - redis-siliq
+    environment:
+      - DJANGO_SETTINGS_MODULE=jupyter-notebooks.settings
+      - JUPYTER_ENABLE_LAB= "yes"
+    ports:
+      - "8888:8888"
+    volumes:
+      - .:/home/jovyan/app
+      - ./jupyter-notebooks/notebooks:/home/jovyan/work
+      - ./jupyter-notebooks/.local:/home/jovyan/.local
+      - ./jupyter-notebooks/.cache:/home/jovyan/.cache
+    command: sh -c "python ../app/manage.py shell_plus --notebook"
+
+volumes:
+  pgadmin:
+  staticfiles-siliq:

@@ -1,0 +1,14 @@
+venv
+htmlcov
+.vscode
+TODO.md
+README.md
+dev.env
+.gitlab-ci.yml
+.git
+.gitignore
+session_files
+*.swp
+*.pid
+.vscode
+media/*

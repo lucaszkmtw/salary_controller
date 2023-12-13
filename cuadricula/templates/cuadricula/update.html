@@ -1,0 +1,105 @@
+{% extends 'marco.html' %}
+{% load widget_tweaks %}
+
+{% block title %}
+<title>Cuadriculas</title>
+{% endblock %}
+
+{% block css_mas %}
+{% endblock %}
+
+{% block marco %}
+<!-- template: detalle_proyecto.html -->
+
+<section class="content-header">
+    <h1>
+        Cuadricula
+        <small>Update</small>
+    </h1>
+</section>
+
+<section class="content">
+    {% include "blocks/messages.html" %}
+    {% include "blocks/errors.html" %}
+
+    <div class="box box-success">
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="modifier" value="{{ user.id }}">
+            <input type="hidden" name="modified" value='{% now "m/j/Y H:i" %}' data-date-format="DD/MM/YYYY hh:mm">
+            <div class="box-header with-border">
+                <h3 class="box-title">Modificar Cuadricula</h3>
+                <div class="pull-right box-tools">
+                    <a href="{% url 'cuadricula-detail' cuadricula.id %}" class="btn btn-sm btn-info">Ver</a>
+                    <a href="{% url 'cuadricula-list' %}" class="btn btn-sm btn-primary">Ver todas</a>
+                </div>
+            </div>
+            <div class="box-body">
+                <div class="form-group">
+                    {{ form.proyecto.errors }}
+                    <label class="form-control-label" for="{{ form.proyecto.id_for_label }}">
+                        {{ form.proyecto.label }}
+                    </label>
+                    {% render_field form.proyecto|add_class:"form-control select2" %}
+                </div>
+
+                <div class="form-group">
+                    {{ form.reparticion.errors }}
+                    <label class="form-control-label" for="{{ form.reparticion.id_for_label }}">
+                        {{ form.reparticion.label }}
+                    </label>
+                    {% render_field form.reparticion|add_class:"form-control select2" %}
+                </div>
+
+                <div class="form-group">
+                    {{ form.nombre.errors }}
+                    <label class="form-control-label" for="{{ form.nombre.id_for_label }}">
+                        {{ form.nombre.label }}
+                    </label>
+                    {% render_field form.nombre|add_class:"form-control" %}
+                </div>
+
+                <div class="form-group">
+                    {{ form.codigo.errors }}
+                    <label class="form-control-label" for="{{ form.codigo.id_for_label }}">
+                        {{ form.codigo.label }}
+                    </label>
+                    {% render_field form.codigo|add_class:"form-control" placeholder="Enter codigo..."%}
+                </div>
+                <div class="col-md-6" style="padding-left: 0; padding-right: 0;">
+                    <div class="form-group">
+                        {{ form.periodo_dd.errors }}
+                        <label class="form-control-label" for="{{ form.periodo_dd.id_for_label }}">
+                            {{ form.periodo_dd.label }}
+                        </label>
+                        {% render_field form.periodo_dd|add_class:"form-control" type="date"%}
+                    </div>
+                </div>
+                <div class="col-md-6" style="padding-left: 0; padding-right: 0;">
+                    <div class="form-group">
+                        {{ form.periodo_ht.errors }}
+                        <label class="form-control-label" for="{{ form.periodo_ht.id_for_label }}">
+                            {{ form.periodo_ht.label }}
+                        </label>
+                        {% render_field form.periodo_ht|add_class:"form-control" type="date"%}
+                    </div>
+                </div>
+                <div class="form-group">
+                    {{ form.observaciones.errors }}
+                    <label class="form-control-label" for="{{ form.observaciones.id_for_label }}">
+                        {{ form.observaciones.label }}
+                    </label>
+                    {% render_field form.observaciones|add_class:"form-control" type="textarea" rows="3"%}
+                </div>
+            </div>
+            <div class="box-footer">
+                <a href="{% url 'cuadricula-list' %}" class="btn btn-danger">Cancelar</a>
+                <button type="submit" class="btn btn-warning pull-right">Actualizar</button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
+
+{% block js_mas %}
+{% endblock %}

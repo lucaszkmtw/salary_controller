@@ -1,0 +1,79 @@
+version: '3.5'
+
+volumes:
+  staticfiles-siliq:
+  postgresql-data-siliq:
+
+networks:
+  default:
+    external: true
+    name: ips-gba-gov-ar
+
+services:
+  postgres-siliq:
+    image: postgres:13.2-alpine
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgresql-data-siliq:/var/lib/postgresql/data
+    env_file:
+      - prod.env
+    restart: unless-stopped
+
+  app-siliq:
+    image: frnncs/siliq:latest
+    command: sh -c "
+      python manage.py makemigrations &&
+      python manage.py migrate django_celery_results &&
+      python manage.py migrate &&
+      python manage.py collectstatic --no-input &&
+      gunicorn project.wsgi -c gunicorn-conf.py"
+    depends_on:
+      - nginx-siliq
+    volumes:
+      - staticfiles-siliq:/usr/src/app/staticfiles
+    environment:
+      - DJANGO_SETTINGS_MODULE=project.settings.production
+    env_file:
+      - prod.env
+    restart: unless-stopped
+
+  celery_worker-siliq:
+    image: frnncs/siliq:latest
+
+    env_file:
+      - prod.env
+    environment:
+      - DJANGO_SETTINGS_MODULE=project.settings.production
+    command: sh -c "
+      celery
+      -A project
+      worker
+      -l info
+      --pidfile=celery.pid"
+
+  celery_beat-siliq:
+    image: frnncs/siliq:latest
+    environment:
+      - DJANGO_SETTINGS_MODULE=project.settings.production
+    command: sh -c "celery
+      -A project beat
+      -l info
+      --scheduler django_celery_beat.schedulers:DatabaseScheduler
+      --pidfile=beat.pid"
+    env_file:
+      - prod.env
+
+  nginx-siliq:
+    image: nginx:alpine
+    command: nginx -g "daemon off;"
+    ports:
+      - "80:80"
+    volumes:
+      - ./default.conf:/etc/nginx/nginx.conf:ro
+      - ./media:/www/media
+      - ./logs:/var/log/nginx
+      - staticfiles-siliq:/www/static
+    environment:
+      - VIRTUAL_HOST=${NGINX_HOST}
+    restart: on-failure

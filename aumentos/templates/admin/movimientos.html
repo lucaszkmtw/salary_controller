@@ -1,0 +1,13 @@
+<!-- admin/order_intermediate.html -->
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <p>Broadcast Message will be sent to these users:</p>
+    <ul>{{ items|unordered_list }}</ul>
+    <input type="hidden" name="action" value="test" />
+    <input type="submit" name="apply" value="Send" />
+</form>
+{% endblock %}

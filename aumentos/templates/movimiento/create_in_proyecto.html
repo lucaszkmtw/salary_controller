@@ -1,0 +1,73 @@
+<!-- template: movimiento/create_in_proyecto.html -->
+
+<!-- Modal nuevo Movimiento-->
+
+<div class="modal fade" id="modal-default" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span></button>
+        <h4 class="modal-title">Nuevo Movimiento</h4>
+      </div>
+      {% if perms.aumentos.add_movimiento %}
+      <form action="{% url 'movimiento-create' %}" method="post">
+        {% csrf_token %}
+        <input type="hidden" name="proyecto_id" value="{{proyecto.id}}">
+        <div class="box-body">
+          <div class="form-group col-md-12">
+            <label>Descripcion: </label>
+            <input required type="name" name="nombre" class="form-control"  placeholder="Descripcion">
+          </div>
+
+          <div class="form-group col-md-12">
+            <label>Tipo: </label>
+            <select class="select2" name="tipo_movimiento" style="border-radius:0px ; width: 100%;" required>
+              <option value="1">Aumento</option>
+              <option value="2">Baja Cargos</option>
+              <option value="3">Alta Cargos</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-12">
+            <label style="margin-bottom: 10px">Reparticion: </label>
+            <select name="reparticion_id" class="select2" style="border-radius:0px ; width: 100% "required>
+              {% for reparticion in reparticiones %}
+              <option value="{{reparticion.id}}">
+                {{reparticion.codigo}}&nbsp;&nbsp;{{reparticion.nombre}}
+              </option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label>Periodo Desde: </label>
+            <input required type="month" class="form-control" name="periodo_dd">
+          </div>
+          <div class="form-group col-md-6">
+            <label>Periodo Hasta: </label>
+            <input required type="month" class="form-control" name="periodo_ht">
+          </div>
+          <div class="form-group col-md-6">
+            <label>observaciones </label>
+            <input class="form-control" name="observaciones">
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Crear</button>
+        </div>
+      </form>
+      {% else %}
+        <div class="modal-body">
+          <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+            <h4><i class="icon fa fa-ban"></i> Error!</h4>
+            No tiene permisos para crear un movimiento.
+          </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+<!-- template: movimiento/create_in_proyecto.html -->

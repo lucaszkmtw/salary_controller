@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block body-class %} class=" hold-transition skin-green sidebar-mini sidebar-collapse" {% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static '/dist/css/skins/_all-skins.min.css' %}">
+<link rel="stylesheet" href="{% static 'bower_components/font-awesome/css/font-awesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/sweetalert2.min.css' %}">
+
+{% block css_mas %}
+{% endblock %}
+{% endblock %}
+{% block content %}
+<div class="wrapper">
+  <header class="main-header">
+    <a href="/" class="logo">
+      <img src="{% static 'img/provincia-out.png' %}" height="50" class="logo-mini p-1 center-block">
+      <img src="{% static 'img/ips-logo.png' %}" height="50" class="logo-lg" style="padding-top:0px;">
+    </a>
+    {% include "blocks/navbar.html" %}
+  </header>
+  {% include "blocks/main-sidebar.html" %}
+  <div class="content-wrapper">
+    {% include "blocks/breadcrumb.html" %}
+    {% block marco %}
+    {% endblock %}
+  </div>
+  <div id="task_detail"></div>
+  <span id="tasks_html"></span>
+  {% include "blocks/footer.html" %}
+  {% include "blocks/control-sidebar.html" %}
+</div>
+{% endblock %}
+{% block js %}
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $("#toogle-sidebar-button").click(function (e) {
+      if (String($("#watchdog_cant").text()) > 0) {
+        $("#watchdog_cant").hide()
+      }
+    })
+  })
+</script>
+{% block js_mas %}{% endblock %}
+{% endblock %}

@@ -1,0 +1,75 @@
+version: '3.5'
+
+volumes:
+  staticfiles-siliq:
+  postgresql-data-siliq:
+
+networks:
+  default:
+    external:
+      name: ips-gba-gov-ar
+
+services:
+  postgres-siliq:
+    image: postgres:13.2-alpine
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgresql-data-siliq:/var/lib/postgresql/data
+    env_file:
+      - prod.env
+    restart: unless-stopped
+
+  app-siliq:
+    image: frnncs/siliq:latest
+    command: [
+        "sh", "-c",
+        "pip install debugpy --upgrade -t /tmp &&
+        python /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678
+        manage.py runserver 0.0.0.0:8000 --nothreading --noreload"]
+    volumes:
+      - staticfiles-siliq:/usr/src/app/staticfiles
+    environment:
+      - DJANGO_SETTINGS_MODULE=project.settings.production
+    env_file:
+      - prod.env
+    ports:
+      - 5678:5678
+    restart: unless-stopped
+
+  celery_worker-siliq:
+    image: frnncs/siliq:latest
+    environment:
+      - DJANGO_SETTINGS_MODULE=project.settings.production
+    command: sh -c "
+      celery
+      -A project
+      worker
+      -l info
+      --pidfile=celery.pid"
+
+  celery_beat-siliq:
+    image: frnncs/siliq:latest
+    environment:
+      - DJANGO_SETTINGS_MODULE=project.settings.production
+    command: sh -c "celery
+      -A project beat
+      -l info
+      --scheduler django_celery_beat.schedulers:DatabaseScheduler
+      --pidfile=beat.pid"
+
+  nginx-siliq:
+    image: nginx:alpine
+    command: nginx -g "daemon off;"
+    env_file:
+      - prod.env
+    depends_on:
+      - app-siliq
+    ports:
+      - "80:80"
+    volumes:
+      - ./default.conf:/etc/nginx/nginx.conf:ro
+      - ./media:/www/media
+      - ./logs:/var/log/nginx
+      - staticfiles-siliq:/www/static
+    restart: on-failure

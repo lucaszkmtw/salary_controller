@@ -1,0 +1,24 @@
+{% load widget_tweaks %}
+
+{% if perms.aumentos.add_proyecto %}
+        <form method="POST" action={% url 'proyecto-create' %}>
+            {% csrf_token %}
+            <input type="hidden" name="creator" id="id_creator" value="{{ user.id }}">
+            {% for field in form %}
+                {% if field.label != "Creator" %}
+                    <div class="form-group {% if field.errors %} has-error {% endif %}" >
+                        <label class="form-control-label" for="{{ field.id_for_label }}">
+                            {{ field.label }}
+                        </label>
+                        {% render_field field|add_class:"form-control" type=field.widget_type %}
+                        {% if field.errors %}
+                            <span class="help-block">
+                                {{ field.errors }}
+                            </span>
+                        {% endif %}
+                    </div>
+                {% endif %}
+            {% endfor %}
+            <button type="submit" class="btn btn-success pull-right">Crear</button>
+        </form>
+{% endif %}

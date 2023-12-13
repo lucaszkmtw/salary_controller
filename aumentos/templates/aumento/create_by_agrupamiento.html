@@ -1,0 +1,31 @@
+<div class="tab-pane" id="tab-agrupamiento">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-2">
+          <p>Agrupamiento de cargos</p>
+        </div>
+        <div class="col-md-5">
+          <select class="select2" style="width: 100%;" id="cargo-agrupamiento"
+            data-placeholder="Agrupamientos..." style="border-radius:0px;" important>
+            <option selected disabled>Agrupamiento</option>
+            {% for agrupamiento in agrupamientos %}
+              {% if agrupamiento.is_active %}
+                <option value="{{ agrupamiento.id }}">{{ agrupamiento.nombre }}</option>
+              {% endif%}
+            {% endfor %}
+          </select>
+        </div>
+        <div class="col-md-5">
+          <button type="button" class="btn btn-sm" id="nuevo_agrupamiento">
+            <i class="fa fa-fw fa-plus"></i>
+          </button>
+          <button type="button" class="btn btn-sm" id="eliminar_agrupamiento">
+            <i class="fa fa-fw fa-trash"></i>
+          </button>
+          <button type="button" class="btn btn-sm" id="modificar_agrupamiento">
+            <i class="fa fa-fw fa-edit"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>

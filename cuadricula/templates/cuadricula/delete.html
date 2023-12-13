@@ -1,0 +1,47 @@
+{% extends 'marco.html' %}
+{% load widget_tweaks %}
+
+{% block title %}
+<title>Cuadriculas</title>
+{% endblock %}
+
+{% block css_mas %}
+{% endblock %}
+
+{% block marco %}
+<!-- template: detalle_proyecto.html -->
+<section class="content-header">
+    <h1>
+        Cuadricula
+        <small>Delete</small>
+    </h1>
+</section>
+
+<section class="content">
+    {% include "blocks/messages.html" %}
+    <div class="box box-warning">
+        <div class="box-header with-border">
+            <h3 class="box-title">Eliminar Cuadricula <strong>#{{ cuadricula.id }}</strong></h3>
+            <div class="pull-right box-tools">
+                <a href="{% url 'cuadricula-detail' cuadricula.id %}" class="btn btn-sm btn-info">Ver</a>
+                <a href="{% url 'cuadricula-list' %}" class="btn btn-sm btn-primary">Ver todas</a>
+            </div>
+        </div>
+        <form method="POST">
+            {% csrf_token%}
+            <div class="box-body">
+                <div class="alert alert-warning" role="alert">
+                    Estas seguro que quieres eliminar la cuadricula <strong>{{ cuadricula.nombre }}</strong> ?
+                </div>
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                    <a href="{% url 'cuadricula-list' %}" class="btn btn-primary pull-right">Volver</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
+
+{% block js_mas %}
+{% endblock %}

@@ -1,0 +1,38 @@
+<aside class="main-sidebar">
+  <section class="sidebar">
+    <ul class="sidebar-menu" data-widget="tree">
+      <li class="treeview active menu-open">
+        <a href="#">
+          <i class="fa fa-edit"></i> <span>Proyectos</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li class="active">
+            <a href="{% url 'proyecto-list' %}"><i class="fa fa-circle-o"></i>Listado</a>
+          </li>
+          <li class="active">
+            <a href="{% url 'proyecto-create' %}"><i class="fa fa-circle-o"></i>Crear</a>
+          </li>
+        </ul>
+      </li>
+      <li class="treeview active menu-open">
+        <a href="#">
+          <i class="fa fa-list"></i> <span>Cuadriculas</span>
+          <span class="pull-right-container">
+            <i class="fa fa-angle-left pull-right"></i>
+          </span>
+        </a>
+        <ul class="treeview-menu">
+          <li  class="active">
+            <a href="{% url 'cuadricula-list' %}"><i class="fa fa-circle-o"></i>Listado</a>
+          </li>
+          <li  class="active">
+            <a href="{% url 'cuadricula-create' %}"><i class="fa fa-circle-o"></i>Crear</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</aside>
